@@ -15,8 +15,10 @@
 ## 컴퓨터가 이해하는 정보
 ![](https://velog.velcdn.com/images/dev_kickbell/post/7d0ded06-15cc-4099-b6d1-c121b0f7886e/image.png)
 
-## 컴퓨터의 4가지 핵심 부품
-### CPU
+## 컴퓨터의 4가지 핵심 부품		
+	
+### CPU			
+		
 ![](https://velog.velcdn.com/images/dev_kickbell/post/c516bf02-a3b7-421e-b817-b3f0ae12aecf/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/eeaa975a-77fc-4e4c-9990-e1f230d98ec0/image.png)
 * 메모리에 저장된 명령어를 읽고, 읽은 명령어를 해석하고, 실행하는 부품
 * CPU 핵심 부품 4가지 
