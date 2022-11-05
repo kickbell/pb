@@ -114,6 +114,13 @@
     
 
 
+## 자료구조 / 알고리즘 기반 문제 손코딩
+
+* 단순히 코딩테스트를 잘하냐를 묻는 것이 아님. ![](https://velog.velcdn.com/images/dev\_kickbell/post/e819152e-5400-4aee-957f-fa2ee35ec950/image.png)![](https://velog.velcdn.com/images/dev\_kickbell/post/09f8d63e-786b-4660-8621-9f5f77a029d5/image.png)![](https://velog.velcdn.com/images/dev\_kickbell/post/0a2673af-736b-4cad-8296-9fbe6a268de5/image.png)
+
+### 손코딩 1 ( 가벼운 문제부터 시작하는 경우 )
+
+* 여기서 원하는 것은 문제를 듣고 아래와 같은 질문을 하냐는 것이다.
 
 
 
