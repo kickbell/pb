@@ -1,5 +1,4 @@
 ## 음계
-
 [2920](https://www.acmicpc.net/problem/2920)        
 
 <img width="754" alt="image" src="https://user-images.githubusercontent.com/85085822/201589761-9c507c7a-cff3-45fa-9bff-840be22fb759.png">
