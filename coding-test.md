@@ -1,6 +1,5 @@
 ## 
 ## 음계 - [2920](https://www.acmicpc.net/problem/2920)        
-![image](https://user-images.githubusercontent.com/85085822/201590990-ac4e5f36-625d-4d1f-aa67-20bb6a1da03e.png)
 <details>
   <summary> 정답 </summary>
   <p>
@@ -55,3 +54,11 @@ scale2()
 ```
   </p>
 </details>
+
+
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/201612386-25c8c9c3-d26a-439c-b92a-4573514b658e.png">
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/201613018-1e53d6b7-2b9e-47a8-83f7-f5a5149d1aca.png">
+
+
+
+
