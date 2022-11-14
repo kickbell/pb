@@ -1,9 +1,11 @@
-//
-//  main.swift
-//  CodingTest
-//
-//  Created by jc.kim on 11/12/22.
-//
+
+//https://www.acmicpc.net/problem/2798
+//5 21
+//5 6 7 8 9
+
+//카드의 개수 N = 5
+//M을 넘지 않으면서 M에 최대한 가까운 카드 3장의 합 = 21
+//주어진 카드 5, 6, 7, 8, 9
 
 import Foundation
 
@@ -28,6 +30,5 @@ for i in 0..<length {
 }
 
 print(result)
-
 
 
