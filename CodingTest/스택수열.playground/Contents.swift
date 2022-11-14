@@ -54,13 +54,3 @@ var count = 1
 result.forEach {
     print($0)
 }
-
-
-
-
-
-
-
-
-
-

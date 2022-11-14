@@ -28,6 +28,7 @@
 		A8EDB4BC291F0320006F17D4 /* 블랙잭.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "블랙잭.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A8EDB4BD291F032D006F17D4 /* 음계.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "음계.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A8EDB4BE2921DB04006F17D4 /* 주의사항 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "주의사항"; sourceTree = "<group>"; };
+		A8EDB4C029220FC6006F17D4 /* 스택수열.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "스택수열.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +45,10 @@
 		A8EDB4A9291F0301006F17D4 = {
 			isa = PBXGroup;
 			children = (
-				A8EDB4BE2921DB04006F17D4 /* 주의사항 */,
+				A8EDB4C029220FC6006F17D4 /* 스택수열.playground */,
 				A8EDB4BD291F032D006F17D4 /* 음계.playground */,
 				A8EDB4BC291F0320006F17D4 /* 블랙잭.playground */,
+				A8EDB4BE2921DB04006F17D4 /* 주의사항 */,
 				A8EDB4B4291F0301006F17D4 /* CodingTest */,
 				A8EDB4B3291F0301006F17D4 /* Products */,
 			);
