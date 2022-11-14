@@ -1,4 +1,9 @@
-## 
+##
+
+## 백준 주의사항
+- import Foundation 안적어주면 components 같은 것들 컴파일 에러 발생함.
+- playground 상에서는 readLine()이 안먹힘. main에서 실행 후 완성된 코드만 옮겨야함.
+
 ## 음계 - [2920](https://www.acmicpc.net/problem/2920)        
 <details>
   <summary> 정답 </summary>
