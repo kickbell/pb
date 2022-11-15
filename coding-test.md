@@ -136,12 +136,37 @@ result.forEach {
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 프린터큐 - [1966](https://www.acmicpc.net/problem/1966)        
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/201834572-151a720e-3fb7-4953-a0f7-a961c4601b37.png">
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+import Foundation
+
+let testCaseNumber = readLine()!.components(separatedBy: " ").map { Int($0)! }.first ?? 0
+
+for _ in 1...testCaseNumber {
+    let m = readLine()!.components(separatedBy: " ").map { Int($0)! }.last ?? 0
+    let queue = readLine()!.components(separatedBy: " ").map { Int($0)! }
+    var tQueue: [(idx: Int, priority: Int)] = queue.enumerated().map { ($0, $1)}
+    var count = 0
+    
+    while true {
+        if tQueue.first?.priority ?? 0 == tQueue.max(by: { $0.priority < $1.priority })?.priority ?? 0 {
+            count += 1
+            if tQueue.first?.idx ?? 0 == m {
+                print(count)
+                break
+            } else {
+                tQueue.removeFirst()
+            }
+        } else {
+            tQueue.append(tQueue.removeFirst())
+        }
+    }
+}
 ```
   </p>
 </details>
