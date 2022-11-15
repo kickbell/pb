@@ -171,12 +171,83 @@ for _ in 1...testCaseNumber {
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+##  - [5397](https://www.acmicpc.net/problem/5397)      
+![image](https://user-images.githubusercontent.com/85085822/201849416-d839ea3f-7db4-45bf-a50b-bd36c323c1ed.png)
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+
+import Foundation
+
+let testCaseNumber = readLine()!.split(separator: " ").map { Int($0)!}.first ?? 0
+
+for _ in 1...testCaseNumber {
+    let data: [String] = readLine()!.map { String($0) }
+    var leftStack: [String] = []
+    var rightStack: [String] = []
+
+    data.forEach {
+        switch $0 {
+        case "<":
+            if !leftStack.isEmpty { rightStack.append(leftStack.removeLast()) }
+        case ">":
+            if !rightStack.isEmpty { leftStack.append(rightStack.removeLast()) }
+        case "-":
+            if !leftStack.isEmpty { leftStack.removeLast() }
+        default:
+            leftStack.append($0)
+        }
+    }
+    
+    print(leftStack.joined() + rightStack.reversed().joined())
+}
+
+
+//테스트 케이스
+
+//ABC<<D>E<<F>>--
+//ADFC
+
+//ab<-c
+//cb
+
+
+//실패한 풀이
+//for _ in 1...testCaseNumber {
+//
+//    var data: [String] = readLine()!.map { String($0) }
+//    var stack: [String] = []
+//    var cursorIdx = 0
+//
+//    guard data.contains("<") || data.contains(">") || data.contains("-") else {
+//        print(data.joined())
+//        exit(0)
+//    }
+//
+//    while !data.isEmpty {
+//        let value = data.first ?? ""
+//
+//        switch value {
+//        case "<":
+//            if cursorIdx > 0 { cursorIdx -= 1 }
+//        case ">":
+//               cursorIdx = min(stack.count, cursorIdx + 1)
+//        case "-":
+//            if cursorIdx > 0 { cursorIdx -= 1 }
+//            _ = stack.remove(at: cursorIdx)
+//        default:
+//            stack.insert(value, at: cursorIdx)
+//            cursorIdx = min(stack.count, cursorIdx + 1)
+//        }
+//
+//        data.removeFirst()
+//    }
+//
+//    print(stack.joined())
+//}
+
 ```
   </p>
 </details>
