@@ -252,12 +252,28 @@ for _ in 1...testCaseNumber {
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 수 찾기 - [1920](https://www.acmicpc.net/problem/1920)
+- 특정 정수의 등장여부만을 체크할 때, Set를 활용하면 좋다.
+- 아래 코드에서 Set을 사용하지 않으면 시간초과가 발생한다. 
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+import Foundation
+
+let n = readLine()!.map { String($0) }.map { Int($0)! }.first ?? 0
+let nList = Set(readLine()!.split(separator: " ").map { Int($0)! })
+let m = readLine()!.map { String($0) }.map { Int($0)! }.first ?? 0
+let mList = readLine()!.split(separator: " ").map { Int($0)! }
+
+mList.forEach {
+    if nList.contains($0) {
+        print("1")
+    } else {
+        print("0")
+    }
+}
 ```
   </p>
 </details>
