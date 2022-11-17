@@ -419,6 +419,27 @@ class Stack {
   </p>
 </details>
 
+## 제로 - [10773](https://www.acmicpc.net/problem/10773)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+import Foundation
+
+let testCaseNumber = Int(readLine()!)!
+var sum: [Int] = []
+
+for _ in 1...testCaseNumber {
+    let input = Int(readLine()!)!
+    input == 0 ? _ = sum.popLast() : sum.append(input)
+}
+
+print(sum.reduce(0, +))
+```
+  </p>
+</details>
+
 ## ? - [1](https://www.acmicpc.net/problem/1)        
 <details>
   <summary> 정답 </summary>
@@ -428,6 +449,101 @@ class Stack {
 ```
   </p>
 </details>
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
+## ? - [1](https://www.acmicpc.net/problem/1)        
+<details>
+  <summary> 정답 </summary>
+  <p>
+
+```swift
+```
+  </p>
+</details>
+
 
 ## ? - [1](https://www.acmicpc.net/problem/1)        
 <details>
