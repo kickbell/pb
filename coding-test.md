@@ -350,12 +350,61 @@ for _ in 1...testCaseNumber {
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 스택 - [10828](https://www.acmicpc.net/problem/10828)        
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+
+import Foundation
+
+let testCaseNumber = Int(readLine()!)!
+
+let stack = Stack()
+
+for _ in 1...testCaseNumber {
+    let input = readLine()!.split(separator: " ")
+    
+    switch input[0] {
+    case "push": stack.push(Int(input[1])!)
+    case "pop": stack.pop()
+    case "size": stack.size()
+    case "empty": stack.empty()
+    case "top": stack.top()
+    default: break
+    }
+}
+
+class Stack {
+    var stack: [Int] = []
+    
+    func push(_ data: Int) {
+        stack.append(data)
+    }
+    
+    func pop() {
+        print(stack.popLast() ?? -1)
+    }
+    
+    func size() {
+        print(stack.count)
+    }
+    
+    func empty() {
+        if stack.isEmpty {
+            print("1")
+        } else {
+            print("0")
+        }
+    }
+    
+    func top() {
+        print(stack.last ?? -1)
+    }
+}
+
+
 ```
   </p>
 </details>
