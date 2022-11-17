@@ -252,7 +252,7 @@ for _ in 1...testCaseNumber {
   </p>
 </details>
 
-## 수 찾기 - [1920](https://www.acmicpc.net/problem/1920)
+## 수 찾기 - [1920](https://www.acmicpc.net/problem/1920)                  
 - 특정 정수의 등장여부만을 체크할 때, Set를 활용하면 좋다.
 - 아래 코드에서 Set을 사용하지 않으면 시간초과가 발생한다. 
 <details>
@@ -279,10 +279,8 @@ mList.forEach {
 </details>
 
 
-
-
-## 친구 네트워크 - [4195](https://www.acmicpc.net/problem/4195)        
-<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202444181-0dcdc861-fe72-40ca-b2f2-657fa54cc54e.png">
+## 친구 네트워크 - [4195](https://www.acmicpc.net/problem/4195)               
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202444181-0dcdc861-fe72-40ca-b2f2-657fa54cc54e.png">      
 <details>
   <summary> 정답 </summary>
   <p>
