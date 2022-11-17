@@ -409,15 +409,6 @@ class Stack {
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
-<details>
-  <summary> 정답 </summary>
-  <p>
-
-```swift
-```
-  </p>
-</details>
 
 ## 제로 - [10773](https://www.acmicpc.net/problem/10773)        
 <details>
