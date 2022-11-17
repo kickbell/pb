@@ -281,12 +281,64 @@ mList.forEach {
 
 
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 친구 네트워크 - [4195](https://www.acmicpc.net/problem/4195)        
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202444181-0dcdc861-fe72-40ca-b2f2-657fa54cc54e.png">
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+
+import Foundation
+
+let testCaseNumber = Int(readLine()!)!
+
+for _ in 1...testCaseNumber {
+    func find(_ x: String) -> String {
+        if x == parent[x]! {
+            return x
+        } else {
+            let p = find(parent[x]!)
+            parent[x] = p
+            return parent[x]!
+        }
+    }
+
+    func union(_ x: String,_ y: String) {
+        let x = find(x)
+        let y = find(y)
+        
+        if x != y {
+            parent[y] = x //루트를 바꿔주는 작업
+            number[x]! += number[y]! //네트워크 수 증가 작업
+        }
+    }
+    
+    let f = Int(readLine()!)!
+    var parent: [String: String] = [:]
+    var number: [String: Int] = [:]
+    
+    for _ in 1...f {
+        //입력받은 값 가져오기
+        let fList = readLine()!.split(separator: " ")
+        let left = String(fList[0])
+        let right = String(fList[1])
+        
+        //초기값 할당, 값이 없다면 자신의 루트는 자신으로. 네트워크 값은 1로.
+        if parent[left] == nil {
+            parent[left] = left
+            number[left] = 1
+        }
+        if parent[right] == nil {
+            parent[right] = right
+            number[right] = 1
+        }
+        
+        union(left, right) //left를 right의 부모로 만들기
+        print(number[find(left)]!)
+    }
+}
+
 ```
   </p>
 </details>
