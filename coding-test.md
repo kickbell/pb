@@ -501,12 +501,31 @@ print(count)
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 요세푸스 문제 - [11866](https://www.acmicpc.net/problem/11866)        
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202648796-0af3200f-3a3d-4601-a30e-960f42b424fd.png">
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+import Foundation
+
+let nk = readLine()!.split(separator: " ").map { Int($0)! }
+let n = nk[0]
+let k = nk[1]
+var deque: [Int] = (1...n).map { Int($0) }
+var result: [Int] = []
+
+while !deque.isEmpty {
+    for _ in 1..<k {
+        guard !deque.isEmpty else { break }
+        deque.append(deque.removeFirst())
+    }
+    result.append(deque.removeFirst())
+}
+
+let str = result.map { String($0) }.joined(separator: ", ")
+print("<" + str + ">")
 ```
   </p>
 </details>
