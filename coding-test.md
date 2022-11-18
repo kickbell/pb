@@ -431,12 +431,72 @@ print(sum.reduce(0, +))
   </p>
 </details>
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 회전하는 큐 - [1021](https://www.acmicpc.net/problem/1021)              
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202641758-f5c84ee8-e666-44e6-8df2-5388bb7624c5.png">
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+
+import Foundation
+
+class Deque {
+    var array: [Int] = []
+    
+    func enqueue(_ data: Int) {
+        array.append(data)
+    }
+    
+    func enqueueFront(_ data: Int) {
+        array.insert(data, at: 0)
+    }
+    
+    func dequeue() -> Int? {
+        guard !array.isEmpty else { return nil }
+        return array.removeFirst()
+    }
+    
+    func dequeueBack() -> Int? {
+        guard !array.isEmpty else { return nil }
+        return array.removeLast()
+    }
+}
+
+let nm = readLine()!.split(separator: " ").map { Int($0)! }
+let n = nm[0]
+let m = nm[1]
+let targets = readLine()!.split(separator: " ").map { Int($0)! }
+var count = 0
+let deque = Deque()
+
+//1...n 까지 순서대로 숫자를 할당
+(1...n).forEach { deque.enqueue($0) }
+
+for target in targets {
+    let index = deque.array.firstIndex(of: target) ?? 0 //덱에서 타겟의 위치 찾기
+    /*
+     배열이 짝수개면 [o,o,o,o,x,x] -> o는 왼쪽이 더 빠르고 x는 오른쪽이 더 빠름
+     배열이 홀수개면 [o,o,o,x,x] -> o는 왼쪽이 더 빠르고 x는 오른쪽이 더 빠름
+     그래서 아래처럼 2로 나누어서 연산한다.
+     */
+    if index <= (deque.array.count / 2) { //왼쪽으로 돌리는게 더 빠른 경우
+        for _ in 0..<index {
+            let x = deque.dequeue() ?? 0
+            deque.enqueue(x)
+            count += 1
+        }
+    } else { // 오른쪽으로 돌리는게 더 빠른 경우
+        for _ in 0..<(deque.array.count - index) {
+            let x = deque.dequeueBack() ?? 0
+            deque.enqueueFront(x)
+            count += 1
+        }
+    }
+    _ = deque.dequeue()
+}
+
+print(count)
 ```
   </p>
 </details>
