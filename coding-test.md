@@ -531,12 +531,88 @@ print("<" + str + ">")
 </details>
 
 
-## ? - [1](https://www.acmicpc.net/problem/1)        
+## 오큰수 - [17298](https://www.acmicpc.net/problem/17298)        
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202833830-c7c5425b-1ede-4962-8eaf-30fbf5acf7fc.png">
+<img width="" alt="image" src="https://user-images.githubusercontent.com/85085822/202833838-3e6e4f1e-1bb6-48c5-9402-ea9467c71361.png">
+
 <details>
   <summary> 정답 </summary>
   <p>
 
 ```swift
+
+//원본 풀이
+import Foundation
+
+let n = Int(readLine()!)!
+let arr = readLine()!.split(separator: " ").map { Int($0)! }
+var stack: [(element: Int, idx: Int)] = [] //빈스택
+var NGE: [Int] = (1...n).map { _ in -1 } //오큰수 배열
+
+for i in 0..<n {
+    let x = arr[i]
+    if stack.count == 0 || (stack.last?.element ?? 0) >= x {
+        //스택이 비어있거나, x와 비교해서 내림차순이라면 삽입
+        stack.append((x, i))
+    } else {
+        //오름차순 이라면
+        while stack.count > 0 {
+            //1. 스택의 요소들을 역방향으로 하나씩 다시 꺼내는데,
+            if let preElement = stack.popLast() {
+                if preElement.element >= x {
+                    //2-1. 그 요소가 x보다 크다면 그냥 다시 넣고
+                    stack.append(preElement)
+                    break
+                } else {
+                    //2-2. 작다면 그것은 오큰수 이므로 값을 넣어준다.
+                    NGE[preElement.idx] = x
+                }
+            }
+        }
+        stack.append((x, i))
+    }
+}
+
+print(NGE.map { String($0)}.joined(separator: " "))
+
+
+
+
+//더 짧은 풀이
+import Foundation
+
+let n = Int(readLine()!)!
+var array = readLine()!.split(separator: " ").map { Int(String($0))! }
+var stack = [Int]()
+
+for i in 0..<n {
+    while !stack.isEmpty && array[stack.last!] < array[i] {
+        array[stack.removeLast()] = array[i]
+    }
+    stack.append(i)
+}
+
+for i in stack {
+    array[i] = -1
+}
+
+print(array.map { String($0)}.joined(separator: " "))
+
+
+
+ // 시간초과 발생한 코드(동작은 제대로 하는듯 ? )
+ import Foundation
+ 
+ let n = Int(readLine()!)!
+ let a = readLine()!.split(separator: " ").map { Int($0)! }
+ var result: [(Int, Int)] = []
+ 
+ for i in 0..<n {
+ let target = a.enumerated().filter { i < $0 && a[i] < $1 }.first ?? (-1, -1)
+ result.append(target)
+ }
+ 
+ print(result.map { String($1) }.joined(separator: " "))
 ```
   </p>
 </details>
