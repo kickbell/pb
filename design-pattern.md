@@ -11,11 +11,11 @@
     - ![](https://velog.velcdn.com/images/dev_kickbell/post/6d7e6959-106b-4d94-9d15-b531fe393ee8/image.png)					
     -  
     ```swift
-    	class Animal {} 
-    	class Human: Animal {}
-        class Cow: Animal {}
-        class Bird: Animal {}
-	```
+    class Animal {} 
+    class Human: Animal {}
+    class Cow: Animal {}
+    class Bird: Animal {}
+    ```
 
 - HAS-A
 	- 객체지향 프로그래밍에서 Composition(구성)에 주로 적용되는 개념이다. 
