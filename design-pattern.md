@@ -220,8 +220,12 @@ class RubberDuck: Duck, Quackable {
 ![](https://velog.velcdn.com/images/dev_kickbell/post/a8b6e7c0-272c-4d8d-a506-9caa74414edc/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/78c8588b-db13-4006-bc95-0bbf2f5f0cd6/image.png)
 
 ### 6. 코드로 구현하기
+- 각 행동은 클래스로 구현되어 FlyBehavior, QuackBehavior 프로토콜을 준수합니다.
+- Duck 클래스에는 변수로 FlyBehavior, QuackBehavior을 가지고 있죠. 이렇게 하면 FlyBehavior, QuackBehavior가 더 상위 타입이기 때문에, 여러 가지의 행동 중에 하나로 초기화 할 수 있지요.
+- 또, 상위 타입으로 구현했기 때문에 func setFlyBehavior()가 있어서 언제든지 런타임에서 행동을 바꿔줄 수도 있습니다. 
+- 결론적으로 각 행동이 수정되면 각 클래스에서 변경해주면 됩니다. 코드가 재사용되고 있고, 만약 새로운 기능이 추가된다고 하면 새로운 행동 클래스를 만들어주면 되겠죠. 		
 
-
+![](https://velog.velcdn.com/images/dev_kickbell/post/ea2630de-4d81-4d21-a90a-f8d89a0622c8/image.png)		
 <details>
   <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
   <p>
