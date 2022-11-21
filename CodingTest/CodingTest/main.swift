@@ -7,53 +7,51 @@
 //  Created by jc.kim on 11/12/22.
 //
 
-//https://www.acmicpc.net/problem/1874
-//
-//총 8개가 들어오고, 스택을 이용해서 +/- 해서 예제대로 만들 수 있는지를 검사한다.
+
+
 /*
- 8 - 총 n의 갯수
- 
- 내가 원하는 숫자
- 4
- 3
- 6
- 8
- 7
  5
- 2
- 1
+ 3 2 1 -3 -1
+ 
+ 
+ 1 4 5 3 2
  */
-
-
 
 import Foundation
 
-var n = Int(readLine()!)!
-var stack: [Int] = []
-var result: [String] = []
-var count = 1
+let n = Int(readLine()!)!
+var deque: [(idx: Int, element: Int)] = readLine()!.split(separator: " ").enumerated().map { ($0+1, Int($1)!) }
+var result: [Int] = []
 
-(1...n).forEach { _ in
-    let input = Int(readLine()!)!
+for _ in 1...n {
+    let target = deque.first!
+    result.append(target.idx)
     
-    while count <= input {
-        stack.append(count)
-        count += 1
-        result.append("+")
-    }
-    
-    if stack.last ?? 0 == input {
-        _ = stack.popLast()
-        result.append("-")
+    if target.element > 0 {
+        for _ in 1...target.element {
+            deque.append(deque.removeFirst())
+        }
     } else {
-        print("NO")
-        exit(0)
+        for _ in 1...abs(target.element) {
+            deque.insert(deque.removeLast(), at: 0)
+        }
+    }
+    
+    if let idx = deque.firstIndex(where: { $0 == target}) {
+        deque.remove(at: idx)
     }
 }
 
-result.forEach {
-    print($0)
-}
+print(result.map { String($0) }.joined(separator: " "))
+
+
+
+
+
+
+
+
+
 
 
 
