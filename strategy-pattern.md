@@ -329,3 +329,6 @@ modelDuck.performFly() //저는 모형오리라 로켓파워로 날아갑니다.
 ```
   </p>
 </details>
+
+## Reference 
+[https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223](https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223)
