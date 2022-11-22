@@ -2,14 +2,16 @@
 > - 한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체에게 연락이 가고 자동으로 내용이 갱신되는 방식으로 일대다(one-to-many)의존성을 정의합니다.
 
 ## 1. WeatherData에 따라서 현재기상조건/기상통계/기상예보 디스플레이를 만들어야 합니다. 
-![](https://velog.velcdn.com/images/dev_kickbell/post/4887f093-ccee-47c9-901a-754892e76024/image.png)
+				
+![](https://velog.velcdn.com/images/dev_kickbell/post/4887f093-ccee-47c9-901a-754892e76024/image.png)				
 
 ## 2. 대략적으로 생각나는대로 구현한 코드의 문제점
 1. 인터페이스가 아닌 구체적인 구현을 바탕으로 코딩하고 있음 
 2. 새로운 디스플레이 항목이 추가될 때마다 코드를 변경해야 함
 3. 실행 중에 디스플레이 항목을 추가하거나 제거할 수 없음 
 4. 바뀌는 부분을 캡슐화 하지 않았음         
-![](https://velog.velcdn.com/images/dev_kickbell/post/464b9864-2ade-4801-81ca-de4416e42402/image.png)           
+				
+![](https://velog.velcdn.com/images/dev_kickbell/post/464b9864-2ade-4801-81ca-de4416e42402/image.png)           		
 
 
 ## 3. 옵저버 패턴의 구조 
@@ -18,7 +20,8 @@
 - 옵저버 등록, 옵저버 탈퇴, 이벤트 알림은 Subject의 메소드를 사용한다. 
 - 데이터를 송출하는 주체는 Subject이고, 옵저버는 Subject의 연락을 기다리는 입장이기에 의존성을 가진다고 볼 수 있다. 
 - 옵저버가 될 객체는 Observer 인터페이스를 준수해야 하고, 오직 update() 메소드만을 가진다.
-![](https://velog.velcdn.com/images/dev_kickbell/post/bd4585f0-56a0-45af-a0ad-b875d1b1c2d3/image.png)
+			
+![](https://velog.velcdn.com/images/dev_kickbell/post/bd4585f0-56a0-45af-a0ad-b875d1b1c2d3/image.png)				
 
 ## 4. 느슨한 결합(Loose Coupling)
 - 느슨한 결합은 객체들이 서로 상호작용할 수는 있지만, 서로를 잘 모르는 관계를 의미한다. 
@@ -29,7 +32,8 @@
 - 즉, 옵저버 패턴을 사용하면 느슨하게 결합되어 있어 유연한 설계를 할 수 있다. 
 
 ## 5. 설계하기 
-![](https://velog.velcdn.com/images/dev_kickbell/post/e3fabcc7-f379-4e85-9825-054808227237/image.png)
+			
+![](https://velog.velcdn.com/images/dev_kickbell/post/e3fabcc7-f379-4e85-9825-054808227237/image.png)			
 
 ## 6. 구현하기 
 - Subject 인터페이스를 구현한다. 옵저버등록/삭제/이벤트알림 기능이 있다. 
