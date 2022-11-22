@@ -23,14 +23,14 @@ class RAM {}
 class MainBoard {}
 
 class Computer {
-let cpu: CPU
-let mainBoard: MainBoard
-let ran: RAM
+    let cpu: CPU
+    let mainBoard: MainBoard
+    let ran: RAM
 
-init(cpu: CPU, mainBoard: MainBoard, ram: RAM) {
-    self.cpu = cpu
-    self.mainBoard = mainBoard
-    self.ram = ram
-}
+    init(cpu: CPU, mainBoard: MainBoard, ram: RAM) {
+        self.cpu = cpu
+        self.mainBoard = mainBoard
+        self.ram = ram
+    }
 }
 ```
