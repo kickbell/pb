@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+
+
+
+
+let hos = HouseBlend()
+
 
