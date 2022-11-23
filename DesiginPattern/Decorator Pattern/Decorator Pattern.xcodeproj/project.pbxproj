@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A8F60EF1292E0B2D002B00D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60EF0292E0B2D002B00D1 /* main.swift */; };
+		A8F60EF8292E58BF002B00D1 /* Beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60EF7292E58BF002B00D1 /* Beverage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		A8F60EED292E0B2D002B00D1 /* Decorator Pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Decorator Pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F60EF0292E0B2D002B00D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A8F60EF7292E58BF002B00D1 /* Beverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beverage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F60EF0292E0B2D002B00D1 /* main.swift */,
+				A8F60EF7292E58BF002B00D1 /* Beverage.swift */,
 			);
 			path = "Decorator Pattern";
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60EF8292E58BF002B00D1 /* Beverage.swift in Sources */,
 				A8F60EF1292E0B2D002B00D1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
