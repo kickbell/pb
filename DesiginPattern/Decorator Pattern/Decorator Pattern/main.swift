@@ -7,17 +7,35 @@
 
 import Foundation
 
-let cafelatte = Espresso(description: "카페라떼")
-cafelatte.setMilk(true)
+/*
+ <메뉴판>
+ 
+ [메인메뉴]
+ 2.49 하우스블렌드
+ 2.49 다크로스트
+ 2.29 디카페인
+ 1.99 에스프레소
+ 
+ [첨가물]
+ 2.0 우유
+ 3.0 두유
+ 2.5 모카
+ 1.0 휘핑크림
+ 
+ */
 
-//에스프레소 1.99 + 우유 2.0
-print(cafelatte.getDescription(), cafelatte.cost())
+var beverage: Beverage = Espresso()
+print("\(beverage.getDescription()) $\(beverage.cost())")
 
-let cafeMocha = Espresso(description: "카페모카")
-cafeMocha.setMocha(true)
-cafeMocha.setWhip(true)
+var beverage2: Beverage = DarkRoast()
+beverage2 = Mocha(beverage: beverage2)
+beverage2 = Mocha(beverage: beverage2)
+beverage2 = Whip(beverage: beverage2)
+print("\(beverage2.getDescription()) $\(beverage2.cost())")
 
-//에스프레소 1.99 + 모카 2.5 + whip 1.0
-print(cafeMocha.getDescription(), cafeMocha.cost())
-
+var beverage3: Beverage = HouseBlend()
+beverage3 = Soy(beverage: beverage3)
+beverage3 = Mocha(beverage: beverage3)
+beverage3 = Whip(beverage: beverage3)
+print("\(beverage3.getDescription()) $\(beverage3.cost())")
 

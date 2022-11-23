@@ -8,67 +8,62 @@
 import Foundation
 
 class Beverage {
-    private var description: String
-    private var milk: Bool = false
-    private var soy: Bool = false
-    private var mocha: Bool = false
-    private var whip: Bool = false
-    
-    init(description: String) {
-        self.description = description
-    }
+    var description: String = "제목 없음"
     
     func getDescription() -> String {
-        self.description
+        return self.description
     }
     
-    private func hasMilk() -> Bool { self.milk }
-    private func hasSoy() -> Bool { self.soy }
-    private func hasMocha() -> Bool { self.mocha }
-    private func hasWhip() -> Bool { self.whip }
-    
-    func setMilk(_ b: Bool) { self.milk = b }
-    func setSoy(_ b: Bool) { self.soy = b }
-    func setMocha(_ b: Bool) { self.mocha = b }
-    func setWhip(_ b: Bool) { self.whip = b }
     func cost() -> Double {
-        var condimentCost: Double = 0.0 //조미료 비용
-        let milkCost: Double = 2.0
-        let soyCost: Double = 3.0
-        let mochaCost: Double = 2.5
-        let whipCost: Double = 1.0
-        
-        if hasMilk() { condimentCost += milkCost }
-        if hasSoy() { condimentCost += soyCost }
-        if hasMocha() { condimentCost += mochaCost }
-        if hasWhip() { condimentCost += whipCost }
-        
-        return condimentCost
+        return 0.0
     }
-    
+}
+
+class CondimentDecorator: Beverage {
+    var beverage = Beverage()
 }
 
 class HouseBlend: Beverage {
+    override init() {
+        super.init()
+        description = "하우스 블렌드 원두"
+    }
+    
     override func cost() -> Double {
-        return 2.49 + super.cost()
+        return 2.49
     }
 }
 
 class DarkRoast: Beverage {
+    override init() {
+        super.init()
+        description = "다크 로스트 원두"
+    }
+    
     override func cost() -> Double {
-        return 2.49 + super.cost()
+        return 2.49
     }
 }
 
 class Decaf: Beverage {
+    override init() {
+        super.init()
+        description = "디카페인"
+    }
+    
     override func cost() -> Double {
-        return 2.29 + super.cost()
+        return 2.29
     }
 }
 
 class Espresso: Beverage {
+    override init() {
+        super.init()
+        description = "에스프레소"
+    }
+    
     override func cost() -> Double {
-        return 1.99 + super.cost()
+        return 1.99
     }
 }
 
