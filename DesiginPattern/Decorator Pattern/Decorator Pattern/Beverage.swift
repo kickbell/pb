@@ -12,7 +12,7 @@ protocol Beverage {
     var description: String { get }
     
     func getDescription() -> String
-    func cost()
+    func cost() -> Double
 }
 
 class HouseBlend: Beverage {
@@ -22,8 +22,8 @@ class HouseBlend: Beverage {
         return description
     }
     
-    func cost() {
-        
+    func cost() -> Double {
+        return 2.49
     }
 }
 
@@ -34,8 +34,8 @@ class DarkRoast: Beverage {
         return description
     }
     
-    func cost() {
-        
+    func cost() -> Double {
+        return 2.49
     }
 }
 
@@ -46,8 +46,8 @@ class Decaf: Beverage {
         return description
     }
     
-    func cost() {
-        
+    func cost() -> Double {
+        return 2.29
     }
 }
 
@@ -58,8 +58,8 @@ class Espresso: Beverage {
         return description
     }
     
-    func cost() {
-        
+    func cost() -> Double {
+        return 1.99
     }
 }
 
