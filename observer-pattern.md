@@ -375,5 +375,6 @@ Program ended with exit code: 0
 	- 인터페이스를 사용하기 때문에 해당 메소드를 구현한다는 것만 알지, 내부의 실제 구현 클래스가 무슨 클래스인지 무엇을 하는지는 모른다. 
     - 그래서 해당 Subject는 다른 곳에서도 재사용이 가능하다. 
 
+## 9. Swift에서 제공하는 [NotificationCenter](https://developer.apple.com/documentation/foundation/nsnotificationcenter)와는 무엇이 다른지? 대체 가능한지? 
 ## Reference 
 [https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223](https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223)
