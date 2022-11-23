@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8EDB509292B61F5006F17D4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB508292B61F5006F17D4 /* main.swift */; };
-		A8EDB510292B6583006F17D4 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB50F292B6583006F17D4 /* Duck.swift */; };
-		A8EDB512292B65D7006F17D4 /* MallardDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB511292B65D7006F17D4 /* MallardDuck.swift */; };
-		A8EDB514292B65E0006F17D4 /* RedHeadDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB513292B65E0006F17D4 /* RedHeadDuck.swift */; };
-		A8EDB516292B686E006F17D4 /* RubberDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB515292B686E006F17D4 /* RubberDuck.swift */; };
-		A8EDB518292B72C8006F17D4 /* FlyBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB517292B72C8006F17D4 /* FlyBehavior.swift */; };
-		A8EDB51A292B72D9006F17D4 /* QuackBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB519292B72D9006F17D4 /* QuackBehavior.swift */; };
-		A8EDB51C292B75E0006F17D4 /* ModelDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB51B292B75E0006F17D4 /* ModelDuck.swift */; };
+		A8EDB52A292CB8BF006F17D4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB529292CB8BF006F17D4 /* main.swift */; };
+		A8EDB531292CC454006F17D4 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB530292CC454006F17D4 /* WeatherData.swift */; };
+		A8EDB533292CC9DB006F17D4 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB532292CC9DB006F17D4 /* Subject.swift */; };
+		A8EDB535292CCA1B006F17D4 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB534292CCA1B006F17D4 /* Observer.swift */; };
+		A8EDB537292CD0A7006F17D4 /* DisplayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB536292CD0A7006F17D4 /* DisplayElement.swift */; };
+		A8EDB539292D02C7006F17D4 /* CurrentConditionsDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB538292D02C7006F17D4 /* CurrentConditionsDisplay.swift */; };
+		A8EDB53F292D0BD9006F17D4 /* PressureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDB53E292D0BD9006F17D4 /* PressureDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A8EDB503292B61F5006F17D4 /* CopyFiles */ = {
+		A8EDB524292CB8BF006F17D4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -30,19 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A8EDB505292B61F5006F17D4 /* StrategyPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StrategyPattern; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8EDB508292B61F5006F17D4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		A8EDB50F292B6583006F17D4 /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
-		A8EDB511292B65D7006F17D4 /* MallardDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallardDuck.swift; sourceTree = "<group>"; };
-		A8EDB513292B65E0006F17D4 /* RedHeadDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedHeadDuck.swift; sourceTree = "<group>"; };
-		A8EDB515292B686E006F17D4 /* RubberDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RubberDuck.swift; path = ../../../../RubberDuck.swift; sourceTree = "<group>"; };
-		A8EDB517292B72C8006F17D4 /* FlyBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyBehavior.swift; sourceTree = "<group>"; };
-		A8EDB519292B72D9006F17D4 /* QuackBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackBehavior.swift; sourceTree = "<group>"; };
-		A8EDB51B292B75E0006F17D4 /* ModelDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDuck.swift; sourceTree = "<group>"; };
+		A8EDB526292CB8BF006F17D4 /* ObserverPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObserverPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EDB529292CB8BF006F17D4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A8EDB530292CC454006F17D4 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		A8EDB532292CC9DB006F17D4 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		A8EDB534292CCA1B006F17D4 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		A8EDB536292CD0A7006F17D4 /* DisplayElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayElement.swift; sourceTree = "<group>"; };
+		A8EDB538292D02C7006F17D4 /* CurrentConditionsDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsDisplay.swift; sourceTree = "<group>"; };
+		A8EDB53E292D0BD9006F17D4 /* PressureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A8EDB502292B61F5006F17D4 /* Frameworks */ = {
+		A8EDB523292CB8BF006F17D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,73 +50,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A8EDB4FC292B61F5006F17D4 = {
+		A8EDB51D292CB8BF006F17D4 = {
 			isa = PBXGroup;
 			children = (
-				A8EDB507292B61F5006F17D4 /* StrategyPattern */,
-				A8EDB506292B61F5006F17D4 /* Products */,
+				A8EDB528292CB8BF006F17D4 /* ObserverPattern */,
+				A8EDB527292CB8BF006F17D4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A8EDB506292B61F5006F17D4 /* Products */ = {
+		A8EDB527292CB8BF006F17D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8EDB505292B61F5006F17D4 /* StrategyPattern */,
+				A8EDB526292CB8BF006F17D4 /* ObserverPattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A8EDB507292B61F5006F17D4 /* StrategyPattern */ = {
+		A8EDB528292CB8BF006F17D4 /* ObserverPattern */ = {
 			isa = PBXGroup;
 			children = (
-				A8EDB508292B61F5006F17D4 /* main.swift */,
-				A8EDB50F292B6583006F17D4 /* Duck.swift */,
-				A8EDB511292B65D7006F17D4 /* MallardDuck.swift */,
-				A8EDB513292B65E0006F17D4 /* RedHeadDuck.swift */,
-				A8EDB515292B686E006F17D4 /* RubberDuck.swift */,
-				A8EDB517292B72C8006F17D4 /* FlyBehavior.swift */,
-				A8EDB519292B72D9006F17D4 /* QuackBehavior.swift */,
-				A8EDB51B292B75E0006F17D4 /* ModelDuck.swift */,
+				A8EDB529292CB8BF006F17D4 /* main.swift */,
+				A8EDB532292CC9DB006F17D4 /* Subject.swift */,
+				A8EDB534292CCA1B006F17D4 /* Observer.swift */,
+				A8EDB530292CC454006F17D4 /* WeatherData.swift */,
+				A8EDB536292CD0A7006F17D4 /* DisplayElement.swift */,
+				A8EDB538292D02C7006F17D4 /* CurrentConditionsDisplay.swift */,
+				A8EDB53E292D0BD9006F17D4 /* PressureDisplay.swift */,
 			);
-			path = StrategyPattern;
+			path = ObserverPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A8EDB504292B61F5006F17D4 /* StrategyPattern */ = {
+		A8EDB525292CB8BF006F17D4 /* ObserverPattern */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8EDB50C292B61F5006F17D4 /* Build configuration list for PBXNativeTarget "StrategyPattern" */;
+			buildConfigurationList = A8EDB52D292CB8BF006F17D4 /* Build configuration list for PBXNativeTarget "ObserverPattern" */;
 			buildPhases = (
-				A8EDB501292B61F5006F17D4 /* Sources */,
-				A8EDB502292B61F5006F17D4 /* Frameworks */,
-				A8EDB503292B61F5006F17D4 /* CopyFiles */,
+				A8EDB522292CB8BF006F17D4 /* Sources */,
+				A8EDB523292CB8BF006F17D4 /* Frameworks */,
+				A8EDB524292CB8BF006F17D4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StrategyPattern;
-			productName = StrategyPattern;
-			productReference = A8EDB505292B61F5006F17D4 /* StrategyPattern */;
+			name = ObserverPattern;
+			productName = ObserverPattern;
+			productReference = A8EDB526292CB8BF006F17D4 /* ObserverPattern */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A8EDB4FD292B61F5006F17D4 /* Project object */ = {
+		A8EDB51E292CB8BF006F17D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					A8EDB504292B61F5006F17D4 = {
+					A8EDB525292CB8BF006F17D4 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = A8EDB500292B61F5006F17D4 /* Build configuration list for PBXProject "StrategyPattern" */;
+			buildConfigurationList = A8EDB521292CB8BF006F17D4 /* Build configuration list for PBXProject "ObserverPattern" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,36 +123,35 @@
 				en,
 				Base,
 			);
-			mainGroup = A8EDB4FC292B61F5006F17D4;
-			productRefGroup = A8EDB506292B61F5006F17D4 /* Products */;
+			mainGroup = A8EDB51D292CB8BF006F17D4;
+			productRefGroup = A8EDB527292CB8BF006F17D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A8EDB504292B61F5006F17D4 /* StrategyPattern */,
+				A8EDB525292CB8BF006F17D4 /* ObserverPattern */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A8EDB501292B61F5006F17D4 /* Sources */ = {
+		A8EDB522292CB8BF006F17D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8EDB514292B65E0006F17D4 /* RedHeadDuck.swift in Sources */,
-				A8EDB518292B72C8006F17D4 /* FlyBehavior.swift in Sources */,
-				A8EDB51C292B75E0006F17D4 /* ModelDuck.swift in Sources */,
-				A8EDB516292B686E006F17D4 /* RubberDuck.swift in Sources */,
-				A8EDB510292B6583006F17D4 /* Duck.swift in Sources */,
-				A8EDB509292B61F5006F17D4 /* main.swift in Sources */,
-				A8EDB512292B65D7006F17D4 /* MallardDuck.swift in Sources */,
-				A8EDB51A292B72D9006F17D4 /* QuackBehavior.swift in Sources */,
+				A8EDB539292D02C7006F17D4 /* CurrentConditionsDisplay.swift in Sources */,
+				A8EDB53F292D0BD9006F17D4 /* PressureDisplay.swift in Sources */,
+				A8EDB537292CD0A7006F17D4 /* DisplayElement.swift in Sources */,
+				A8EDB531292CC454006F17D4 /* WeatherData.swift in Sources */,
+				A8EDB535292CCA1B006F17D4 /* Observer.swift in Sources */,
+				A8EDB533292CC9DB006F17D4 /* Subject.swift in Sources */,
+				A8EDB52A292CB8BF006F17D4 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A8EDB50A292B61F5006F17D4 /* Debug */ = {
+		A8EDB52B292CB8BF006F17D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +211,7 @@
 			};
 			name = Debug;
 		};
-		A8EDB50B292B61F5006F17D4 /* Release */ = {
+		A8EDB52C292CB8BF006F17D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +264,7 @@
 			};
 			name = Release;
 		};
-		A8EDB50D292B61F5006F17D4 /* Debug */ = {
+		A8EDB52E292CB8BF006F17D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -279,7 +275,7 @@
 			};
 			name = Debug;
 		};
-		A8EDB50E292B61F5006F17D4 /* Release */ = {
+		A8EDB52F292CB8BF006F17D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -293,25 +289,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A8EDB500292B61F5006F17D4 /* Build configuration list for PBXProject "StrategyPattern" */ = {
+		A8EDB521292CB8BF006F17D4 /* Build configuration list for PBXProject "ObserverPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8EDB50A292B61F5006F17D4 /* Debug */,
-				A8EDB50B292B61F5006F17D4 /* Release */,
+				A8EDB52B292CB8BF006F17D4 /* Debug */,
+				A8EDB52C292CB8BF006F17D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8EDB50C292B61F5006F17D4 /* Build configuration list for PBXNativeTarget "StrategyPattern" */ = {
+		A8EDB52D292CB8BF006F17D4 /* Build configuration list for PBXNativeTarget "ObserverPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8EDB50D292B61F5006F17D4 /* Debug */,
-				A8EDB50E292B61F5006F17D4 /* Release */,
+				A8EDB52E292CB8BF006F17D4 /* Debug */,
+				A8EDB52F292CB8BF006F17D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A8EDB4FD292B61F5006F17D4 /* Project object */;
+	rootObject = A8EDB51E292CB8BF006F17D4 /* Project object */;
 }
