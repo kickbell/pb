@@ -8,6 +8,8 @@
 import Foundation
 
 class Beverage {
+    enum Size { case TALL, GRANDE, VENTI }
+    var size: Size = .TALL
     var description: String = "제목 없음"
     
     func getDescription() -> String {
@@ -17,10 +19,22 @@ class Beverage {
     func cost() -> Double {
         return 0.0
     }
+    
+    func setSize(_ size: Size) {
+        self.size = size
+    }
+    
+    func getSize() -> Size {
+        return self.size
+    }
 }
 
 class CondimentDecorator: Beverage {
     var beverage = Beverage()
+    
+    override func getSize() -> Beverage.Size {
+        return beverage.getSize()
+    }
 }
 
 class HouseBlend: Beverage {

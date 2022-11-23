@@ -63,6 +63,12 @@ class Whip: CondimentDecorator {
     }
     
     override func cost() -> Double {
-        return beverage.cost() + 1.0
+        var cost = beverage.cost()
+        switch beverage.getSize() {
+        case .TALL: cost += 1.0
+        case .GRANDE: cost += 1.5
+        case .VENTI: cost += 2.0
+        }
+        return cost
     }
 }
