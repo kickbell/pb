@@ -330,7 +330,8 @@ modelDuck.performFly() //저는 모형오리라 로켓파워로 날아갑니다.
   </p>
 </details>
 
-## 8. Swift의 Protocol-Extension 조합으로 대체할 수 있을까? 
+## 7. Swift? Protocol-Extension? 
+- Swift의 Protocol-Extension 조합으로 대체할 수 있을까? 
 
 ## Reference 
 [https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223](https://www.hanbit.co.kr/store/books/look.php?p_code=B6113501223)
