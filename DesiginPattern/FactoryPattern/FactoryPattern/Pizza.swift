@@ -23,6 +23,12 @@ class Pizza {
     func box() {
         print(#function)
     }
+    
+    func getName() -> String {
+        let str = String(describing: self)
+        let name = str.split(separator: ".").last ?? ""
+        return String(name)
+    }
 }
 
 class CheesePizza: Pizza {}

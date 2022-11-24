@@ -7,5 +7,8 @@
 
 import Foundation
 
+let pizzaStore = PizzaStore(SimplePizzaFactory())
+let pizza = pizzaStore.orderPizza("cheese")
+print(pizza.getName())
 
 

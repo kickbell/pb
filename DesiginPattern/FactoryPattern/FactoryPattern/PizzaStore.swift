@@ -8,24 +8,16 @@
 import Foundation
 
 class PizzaStore {
+    var factory: SimplePizzaFactory
+    
+    init(_ factory: SimplePizzaFactory) {
+        self.factory = factory
+    }
+    
     func orderPizza(_ type: String) -> Pizza {
         var pizza: Pizza?
         
-        /*
-         메뉴 추가/삭제에 따라 변하는 부분
-         객체 생성 코드
-         */
-        if type == "cheese"{ //치즈
-            pizza = CheesePizza()
-        } else if type == "greek" { //그리스
-            pizza = GreekPizza()
-        } else if type == "pepperoni" { //페퍼로니
-            pizza = PepperoniPizza()
-        } else if type == "clam" { //조개
-            pizza = PepperoniPizza()
-        } else if type == "veggie" { //야채
-            pizza = PepperoniPizza()
-        }
+        pizza = factory.createPizza(type)
         
         /*
          변하지 않는 부분
