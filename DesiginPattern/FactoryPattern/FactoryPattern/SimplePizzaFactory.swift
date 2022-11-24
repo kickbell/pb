@@ -9,7 +9,7 @@ import Foundation
 
 class SimplePizzaFactory {
     func createPizza(_ type: String) -> Pizza {
-        var pizza: Pizza?
+        var pizza: Pizza = CheesePizza()
         /*
          메뉴 추가/삭제에 따라 변하는 부분
          객체 생성 코드
@@ -26,6 +26,6 @@ class SimplePizzaFactory {
             pizza = PepperoniPizza()
         }
         
-        return pizza ?? Pizza()
+        return pizza
     }
 }

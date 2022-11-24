@@ -7,7 +7,15 @@
 
 import Foundation
 
-class Pizza {
+protocol Pizza {
+    func prepare()
+    func bake()
+    func cut()
+    func box()
+    func getName() -> String
+}
+
+extension Pizza {
     func prepare() {
         print(#function)
     }
