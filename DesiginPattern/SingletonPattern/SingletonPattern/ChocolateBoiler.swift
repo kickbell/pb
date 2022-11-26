@@ -11,7 +11,16 @@ class ChocolateBoiler {
     private var empty: Bool
     private var boiled: Bool
     
-    init() {
+    private static var uniqueInstance: ChocolateBoiler?
+
+    static func getInstance() -> ChocolateBoiler {
+        if uniqueInstance == nil {
+            uniqueInstance = ChocolateBoiler()
+        }
+        return uniqueInstance!
+    }
+    
+    private init() {
         self.empty = true
         self.boiled = false
     }
