@@ -9,7 +9,7 @@
 - 하지만 아래의 코드는 문제가 있다. 
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb"></a></summary>
+  <a href="https://github.com/kickbell/pb"></a>
   <p>
 
 ```swift
