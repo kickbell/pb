@@ -9,7 +9,7 @@
 ![](https://velog.velcdn.com/images/dev_kickbell/post/3189eaf0-8db8-43c7-970f-cb6a276bf77c/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/1387d242-a9f8-4e47-82cc-f81eeb69b26c/image.png)
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -133,7 +133,7 @@ class DecafWithWhipandMilkandSoy: Beverage { ... }
 ![](https://velog.velcdn.com/images/dev_kickbell/post/681b7e16-a922-4037-bbbb-92d8824d7d54/image.png)
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -263,7 +263,7 @@ print(cafeMocha.getDescription(), cafeMocha.cost())
 - 또, Decorator(장식)들은 getDescription(), cost()을 Beverage 객체를 통해서 누적으로 계산할 수 있다. 
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -441,7 +441,7 @@ print("\(beverage3.getDescription()) $\(beverage3.cost())")
 
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -460,7 +460,7 @@ print("\(darkroast.getDescription()) $\(darkroast.cost())")
 - 그리고 사이즈에 따라 첨가물도 그만큼 양이 추가될 것이므로 첨가물 가격도 다르게 받으려고 한다. 
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift

@@ -45,7 +45,7 @@
 - 중요한 점은 상속이 아니라 Composition으로 WeatherData를 변수로 갖고 있다는 점이다. 이 변수를 통해 옵저버로 등록한다. 			
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -204,7 +204,7 @@ Program ended with exit code: 0
 - 그리고 WeatherData에 getTemp(), getHumidity(), getPressure()의 게터 메소드를 만들어서 각 Display에서 weatherData 변수를 통해 weatherData.getTemp()와 같이 직접 데이터를 Pull 해올 수 있게 수정한다. 
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
