@@ -6,7 +6,7 @@
 ## 1. 오리게임에서 사용할 오리가 있어요.
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -55,7 +55,7 @@ class RedHeadDuck: Duck {
 - 결론적으로, 상속은 좋은 해결책이 아니다. 
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -109,7 +109,7 @@ class RubberDuck: Duck {
 ![](https://velog.velcdn.com/images/dev_kickbell/post/38817e7d-ee90-49e4-ab0e-4c8ea1bbcc01/image.png)
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -192,7 +192,7 @@ class RubberDuck: Duck, Quackable {
 
 ![](https://velog.velcdn.com/images/dev_kickbell/post/ea2630de-4d81-4d21-a90a-f8d89a0622c8/image.png)		
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
