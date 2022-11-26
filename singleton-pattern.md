@@ -9,6 +9,7 @@
 - 하지만 아래의 코드는 문제가 있다. 
 
 <details>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -65,6 +66,7 @@ class Singleton {
 	- 어찌보면 가장 간결한 해결책일 수 있다. 예전과는 다르게 하드웨어의 성능이 좋아져서 상대적으로 메모리가 넉넉하기 때문에, 아주 특정한 상황이 아니라면 괜찮을 것이다.
 
 <details>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
@@ -83,6 +85,7 @@ class Singleton {
 - 아래의 코드를 그대로 사용했더니, 아직 초콜릿이 끓고 있는 와중에 새로운 초콜릿이 들어가버리는 오류가 발생했습니다. 이 코드를 싱글턴 패턴으로 바꿔보자.  
 
 <details>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>	
   <p>
 
 ```swift
@@ -146,6 +149,7 @@ class ChocolateBoiler {
 - 2번째 방법으로 문제를 해결했다.
 
 <details>
+  <summary><a href="https://github.com/kickbell/pb"></a></summary>
   <p>
 
 ```swift
