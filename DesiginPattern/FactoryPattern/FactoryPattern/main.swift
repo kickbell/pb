@@ -12,12 +12,15 @@ import Foundation
 //print(pizza.getName())
 
 
-let nyPizzaStore = NYPizzaStore()
-let nyPizza = nyPizzaStore.orderPizza("veggie")
-print(nyPizza.getName())
+let nyStore = NYPizzaStore()
+let chicagoStore = ChicagoPizzaStore()
 
-let californiaPizzaStore = CaliforniaPizzaStore()
-let californiaPizza = californiaPizzaStore.orderPizza("veggie")
-print(californiaPizza.getName())
+
+var pizza = nyStore.orderPizza("veggie")
+print("에단이 주문한 \(pizza.getName())")
+
+
+pizza = chicagoStore.orderPizza("veggie")
+print("조엘이 주문한 \(pizza.getName())")
 
 
