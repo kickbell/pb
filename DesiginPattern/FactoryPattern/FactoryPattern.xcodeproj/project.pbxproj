@@ -13,6 +13,7 @@
 		A8F60F13292FFB2C002B00D1 /* SimplePizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F12292FFB2B002B00D1 /* SimplePizzaFactory.swift */; };
 		A8F60F4329326D43002B00D1 /* NYPizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F4229326D43002B00D1 /* NYPizzaFactory.swift */; };
 		A8F60F4529326D4E002B00D1 /* ChicagoPizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F4429326D4E002B00D1 /* ChicagoPizzaFactory.swift */; };
+		A8F60F4729326EA0002B00D1 /* CaliforniaPizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F4629326EA0002B00D1 /* CaliforniaPizzaFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		A8F60F12292FFB2B002B00D1 /* SimplePizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePizzaFactory.swift; sourceTree = "<group>"; };
 		A8F60F4229326D43002B00D1 /* NYPizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPizzaFactory.swift; sourceTree = "<group>"; };
 		A8F60F4429326D4E002B00D1 /* ChicagoPizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoPizzaFactory.swift; sourceTree = "<group>"; };
+		A8F60F4629326EA0002B00D1 /* CaliforniaPizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaliforniaPizzaFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				A8F60F12292FFB2B002B00D1 /* SimplePizzaFactory.swift */,
 				A8F60F4229326D43002B00D1 /* NYPizzaFactory.swift */,
 				A8F60F4429326D4E002B00D1 /* ChicagoPizzaFactory.swift */,
+				A8F60F4629326EA0002B00D1 /* CaliforniaPizzaFactory.swift */,
 			);
 			path = FactoryPattern;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				A8F60F11292FF7D0002B00D1 /* PizzaStore.swift in Sources */,
 				A8F60F0F292FF78C002B00D1 /* Pizza.swift in Sources */,
 				A8F60F08292EAA6D002B00D1 /* main.swift in Sources */,
+				A8F60F4729326EA0002B00D1 /* CaliforniaPizzaFactory.swift in Sources */,
 				A8F60F4329326D43002B00D1 /* NYPizzaFactory.swift in Sources */,
 				A8F60F13292FFB2C002B00D1 /* SimplePizzaFactory.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ChicagoPizzaFactory.swift
+//  CaliforniaPizzaFactory.swift
 //  FactoryPattern
 //
 //  Created by jc.kim on 11/27/22.
@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-class ChicagoPizzaFactory: Factory {
+class CaliforniaPizzaFactory: Factory {
     func createPizza(_ type: String) -> Pizza {
         var pizza: Pizza = CheesePizza()
         /*
@@ -30,4 +29,3 @@ class ChicagoPizzaFactory: Factory {
         return pizza
     }
 }
-

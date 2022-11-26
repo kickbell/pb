@@ -7,7 +7,11 @@
 
 import Foundation
 
-class SimplePizzaFactory {
+protocol Factory {
+    func createPizza(_ type: String) -> Pizza
+}
+
+class SimplePizzaFactory: Factory {
     func createPizza(_ type: String) -> Pizza {
         var pizza: Pizza = CheesePizza()
         /*

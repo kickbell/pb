@@ -44,3 +44,21 @@ class GreekPizza: Pizza {}
 class PepperoniPizza: Pizza {}
 class ClamPizza: Pizza {}
 class VeggiePizza: Pizza {}
+
+class NYStyleCheesePizza: Pizza {}
+class NYStyleGreekPizza: Pizza {}
+class NYStylePepperoniPizza: Pizza {}
+class NYStyleClamPizza: Pizza {}
+class NYStyleVeggiePizza: Pizza {}
+
+class ChicagoStyleCheesePizza: Pizza {}
+class ChicagoStyleGreekPizza: Pizza {}
+class ChicagoStylePepperoniPizza: Pizza {}
+class ChicagoStyleClamPizza: Pizza {}
+class ChicagoStyleVeggiePizza: Pizza {}
+
+class CaliforniaStyleCheesePizza: Pizza {}
+class CaliforniaGreekPizza: Pizza {}
+class CaliforniaPepperoniPizza: Pizza {}
+class CaliforniaClamPizza: Pizza {}
+class CaliforniaVeggiePizza: Pizza {}
