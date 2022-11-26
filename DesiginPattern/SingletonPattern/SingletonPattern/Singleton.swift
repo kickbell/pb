@@ -10,17 +10,25 @@ import Foundation
 class Singleton {
     private init() { }
     
-    private static var uniqueInstance: Singleton?
-    
-    static func getInstance() -> Singleton {
-        //lazy 키워드를 쓰지 않고 lazy하게 사용
-        //Singleton 객체를 한번도 사용하지 않는다면 생성되지 않으므로 그만큼 메모리 절약
-        if uniqueInstance == nil {
-            uniqueInstance = Singleton()
-        }
-        return uniqueInstance!
-    }
+    static var shared = Singleton()
 }
+
+//class Singleton {
+//    private init() { }
+//
+//    private static var uniqueInstance: Singleton?
+//
+//    static func getInstance() -> Singleton {
+//
+//
+//        //lazy 키워드를 쓰지 않고 lazy하게 사용
+//        //Singleton 객체를 한번도 사용하지 않는다면 생성되지 않으므로 그만큼 메모리 절약
+//        if uniqueInstance == nil {
+//            uniqueInstance = Singleton()
+//        }
+//        return uniqueInstance!
+//    }
+//}
     
 //class Singleton {
 //    private init() { }
