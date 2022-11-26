@@ -65,7 +65,6 @@ class Singleton {
 	- 어찌보면 가장 간결한 해결책일 수 있다. 예전과는 다르게 하드웨어의 성능이 좋아져서 상대적으로 메모리가 넉넉하기 때문에, 아주 특정한 상황이 아니라면 괜찮을 것이다.
 
 <details>
-  <summary><a href="https://github.com/kickbell/pb">스위프트 코드</a></summary>
   <p>
 
 ```swift
