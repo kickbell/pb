@@ -42,3 +42,5 @@ extension Pizza {
 class CheesePizza: Pizza {}
 class GreekPizza: Pizza {}
 class PepperoniPizza: Pizza {}
+class ClamPizza: Pizza {}
+class VeggiePizza: Pizza {}

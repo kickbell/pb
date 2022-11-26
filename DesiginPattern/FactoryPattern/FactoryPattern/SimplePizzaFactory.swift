@@ -21,9 +21,9 @@ class SimplePizzaFactory {
         } else if type == "pepperoni" { //페퍼로니
             pizza = PepperoniPizza()
         } else if type == "clam" { //조개
-            pizza = PepperoniPizza()
+            pizza = ClamPizza()
         } else if type == "veggie" { //야채
-            pizza = PepperoniPizza()
+            pizza = VeggiePizza()
         }
         
         return pizza

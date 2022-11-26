@@ -11,14 +11,7 @@ class ChocolateBoiler {
     private var empty: Bool
     private var boiled: Bool
     
-    private static var uniqueInstance: ChocolateBoiler?
-
-    static func getInstance() -> ChocolateBoiler {
-        if uniqueInstance == nil {
-            uniqueInstance = ChocolateBoiler()
-        }
-        return uniqueInstance!
-    }
+    static var shared = ChocolateBoiler()
     
     private init() {
         self.empty = true
