@@ -17,6 +17,9 @@
 		A8F60F49293272A6002B00D1 /* NYPizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F48293272A6002B00D1 /* NYPizzaStore.swift */; };
 		A8F60F4B293272B3002B00D1 /* ChicagoPizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F4A293272B3002B00D1 /* ChicagoPizzaStore.swift */; };
 		A8F60F4D293272BD002B00D1 /* CaliforniaPizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F4C293272BD002B00D1 /* CaliforniaPizzaStore.swift */; };
+		A8F60F5129336148002B00D1 /* PizzaIngredientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F5029336148002B00D1 /* PizzaIngredientFactory.swift */; };
+		A8F60F542933616E002B00D1 /* NYPizzaIngredientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F532933616E002B00D1 /* NYPizzaIngredientFactory.swift */; };
+		A8F60F56293363EB002B00D1 /* ChicagoPizzaIngredientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F55293363EB002B00D1 /* ChicagoPizzaIngredientFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +46,9 @@
 		A8F60F48293272A6002B00D1 /* NYPizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPizzaStore.swift; sourceTree = "<group>"; };
 		A8F60F4A293272B3002B00D1 /* ChicagoPizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoPizzaStore.swift; sourceTree = "<group>"; };
 		A8F60F4C293272BD002B00D1 /* CaliforniaPizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaliforniaPizzaStore.swift; sourceTree = "<group>"; };
+		A8F60F5029336148002B00D1 /* PizzaIngredientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngredientFactory.swift; sourceTree = "<group>"; };
+		A8F60F532933616E002B00D1 /* NYPizzaIngredientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPizzaIngredientFactory.swift; sourceTree = "<group>"; };
+		A8F60F55293363EB002B00D1 /* ChicagoPizzaIngredientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoPizzaIngredientFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,18 +81,45 @@
 		A8F60F06292EAA6D002B00D1 /* FactoryPattern */ = {
 			isa = PBXGroup;
 			children = (
+				A8F60F4F29336130002B00D1 /* NotUseObjects */,
 				A8F60F07292EAA6D002B00D1 /* main.swift */,
 				A8F60F0E292FF78C002B00D1 /* Pizza.swift */,
+				A8F60F4E2933611C002B00D1 /* PizzaStore */,
+				A8F60F522933614D002B00D1 /* Factories */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
+		A8F60F4E2933611C002B00D1 /* PizzaStore */ = {
+			isa = PBXGroup;
+			children = (
 				A8F60F10292FF7D0002B00D1 /* PizzaStore.swift */,
 				A8F60F48293272A6002B00D1 /* NYPizzaStore.swift */,
 				A8F60F4A293272B3002B00D1 /* ChicagoPizzaStore.swift */,
 				A8F60F4C293272BD002B00D1 /* CaliforniaPizzaStore.swift */,
+			);
+			path = PizzaStore;
+			sourceTree = "<group>";
+		};
+		A8F60F4F29336130002B00D1 /* NotUseObjects */ = {
+			isa = PBXGroup;
+			children = (
 				A8F60F12292FFB2B002B00D1 /* SimplePizzaFactory.swift */,
 				A8F60F4229326D43002B00D1 /* NYPizzaFactory.swift */,
 				A8F60F4429326D4E002B00D1 /* ChicagoPizzaFactory.swift */,
 				A8F60F4629326EA0002B00D1 /* CaliforniaPizzaFactory.swift */,
 			);
-			path = FactoryPattern;
+			path = NotUseObjects;
+			sourceTree = "<group>";
+		};
+		A8F60F522933614D002B00D1 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A8F60F5029336148002B00D1 /* PizzaIngredientFactory.swift */,
+				A8F60F532933616E002B00D1 /* NYPizzaIngredientFactory.swift */,
+				A8F60F55293363EB002B00D1 /* ChicagoPizzaIngredientFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60F56293363EB002B00D1 /* ChicagoPizzaIngredientFactory.swift in Sources */,
+				A8F60F5129336148002B00D1 /* PizzaIngredientFactory.swift in Sources */,
 				A8F60F4529326D4E002B00D1 /* ChicagoPizzaFactory.swift in Sources */,
 				A8F60F4B293272B3002B00D1 /* ChicagoPizzaStore.swift in Sources */,
+				A8F60F542933616E002B00D1 /* NYPizzaIngredientFactory.swift in Sources */,
 				A8F60F11292FF7D0002B00D1 /* PizzaStore.swift in Sources */,
 				A8F60F0F292FF78C002B00D1 /* Pizza.swift in Sources */,
 				A8F60F4D293272BD002B00D1 /* CaliforniaPizzaStore.swift in Sources */,
