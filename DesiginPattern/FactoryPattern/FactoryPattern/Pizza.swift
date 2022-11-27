@@ -180,8 +180,8 @@ class VeggiePizza: Pizza {
     }
     
     func prepare() {
-        print("준비 중: " + name)
         print("\n\n===== Order =====")
+        print("준비 중: " + name)
         dough = ingredienFactory.createDough()
         sauce = ingredienFactory.createSauce()
         cheese = ingredienFactory.createCheese()
