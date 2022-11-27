@@ -9,16 +9,21 @@ import Foundation
 
 class CaliforniaPizzaStore: PizzaStore {
     func createPizza(_ type: String) -> Pizza {
+        var pizza: Pizza = BasicPizza()
+        let ingredientFactory = NYPizzaIngredientFactory()
         if type == "cheese"{ //치즈
-            return CaliforniaStyleCheesePizza()
+            pizza = CheesePizza(ingredienFactory: ingredientFactory)
+            pizza.name = "캘리포니아 스타일 치즈 피자"
         } else if type == "pepperoni"{ //페퍼로니
-            return CaliforniaPepperoniPizza()
+            pizza = PepperoniPizza(ingredienFactory: ingredientFactory)
+            pizza.name = "캘리포니아 스타일 페퍼로니 피자"
         } else if type == "clam" { //조개
-            return CaliforniaClamPizza()
+            pizza = ClamPizza(ingredienFactory: ingredientFactory)
+            pizza.name = "캘리포니아 스타일 조개 피자"
         } else if type == "veggie" { //야채
-            return CaliforniaVeggiePizza()
-        } else {
-            return EmptyPizza()
+            pizza = VeggiePizza(ingredienFactory: ingredientFactory)
+            pizza.name = "캘리포니아 스타일 야채 피자"
         }
+        return pizza
     }
 }

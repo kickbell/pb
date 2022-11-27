@@ -23,12 +23,15 @@ protocol Veggie {} //야채
 protocol Peppernoni {} //페퍼로니
 protocol Clams {} //조개
 
+class BasicDough: Dough { }
 class ThinCrustDough: Dough { }
 class ThickCrustDough: Dough { }
 
+class BasicSauce: Sauce { }
 class MarinaraSauce: Sauce { }
 class PlumTomatoSauce: Sauce { }
 
+class BasicCheese: Cheese { }
 class ReggianoCheese: Cheese { }
 class MozzarellaCheese: Cheese { }
 
@@ -40,8 +43,10 @@ class BlackOlives: Veggie { } //블랙올리브
 class Spinach: Veggie { } //시금치
 class EggPlant: Veggie { } //가지
 
+class BasicPeppernoni: Peppernoni { }
 class SlicedPeppernoni: Peppernoni { }
 
+class BasicClams: Clams { }
 class FreshClams: Clams { }
 class FrozenClams: Clams { }
 
