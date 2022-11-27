@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A8F60F642933A0CB002B00D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F632933A0CB002B00D1 /* main.swift */; };
+		A8F60F6B293418D1002B00D1 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F6A293418D0002B00D1 /* Command.swift */; };
+		A8F60F6D2934194D002B00D1 /* SimpleRemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F6C2934194D002B00D1 /* SimpleRemoteControl.swift */; };
+		A8F60F6F29341A83002B00D1 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F6E29341A83002B00D1 /* Devices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		A8F60F602933A0CB002B00D1 /* CommandPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F60F632933A0CB002B00D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A8F60F6A293418D0002B00D1 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		A8F60F6C2934194D002B00D1 /* SimpleRemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRemoteControl.swift; sourceTree = "<group>"; };
+		A8F60F6E29341A83002B00D1 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A8F60F632933A0CB002B00D1 /* main.swift */,
+				A8F60F6A293418D0002B00D1 /* Command.swift */,
+				A8F60F6C2934194D002B00D1 /* SimpleRemoteControl.swift */,
+				A8F60F6E29341A83002B00D1 /* Devices.swift */,
 			);
 			path = CommandPattern;
 			sourceTree = "<group>";
@@ -120,7 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60F6D2934194D002B00D1 /* SimpleRemoteControl.swift in Sources */,
 				A8F60F642933A0CB002B00D1 /* main.swift in Sources */,
+				A8F60F6B293418D1002B00D1 /* Command.swift in Sources */,
+				A8F60F6F29341A83002B00D1 /* Devices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,5 +7,9 @@
 
 import Foundation
 
-print("Hello, World!")
+let remote = SimpleRemoteControl()
+let light = Light()
+let lightOnCommand = LightOnCommand(light)
 
+remote.setCommand(lightOnCommand)
+remote.buttonWasPressed()
