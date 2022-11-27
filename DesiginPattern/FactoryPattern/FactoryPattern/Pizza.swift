@@ -92,12 +92,16 @@ class BasicPizza: Pizza {
     func prepare() {}
 }
 
+/*
+ lazy 키워드를 사용하면 초기값을 주지 않아도 되지만 이게 맞는지는 모르겠군.
+ 애초에 프로토콜을 준수하려면 꼭 구현해야 하기 때문..
+ */
 class CheesePizza: Pizza {
     var name: String = ""
-    var dough: Dough = BasicDough()
-    var sauce: Sauce = BasicSauce()
+    lazy var dough: Dough = ingredienFactory.createDough()
+    lazy var sauce: Sauce = ingredienFactory.createSauce()
     var veggies: [Veggie] = []
-    var cheese: Cheese = BasicCheese()
+    lazy var cheese: Cheese = ingredienFactory.createCheese()
     var pepperoni: Peppernoni = BasicPeppernoni()
     var clam: Clams = BasicClams()
     
@@ -110,9 +114,9 @@ class CheesePizza: Pizza {
     func prepare() {
         print("\n\n===== Order =====")
         print("준비 중: " + name)
-        dough = ingredienFactory.createDough()
-        sauce = ingredienFactory.createSauce()
-        cheese = ingredienFactory.createCheese()
+//        dough = ingredienFactory.createDough()
+//        sauce = ingredienFactory.createSauce()
+//        cheese = ingredienFactory.createCheese()
     }
 }
 //class GreekPizza: Pizza {}
