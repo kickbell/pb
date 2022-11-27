@@ -23,4 +23,16 @@ class LightOnCommand: Command {
     }
 }
 
+class GarageDoorOpenCommand {
+    let garageDoor: GarageDoor
+    
+    init(_ garageDoor: GarageDoor) {
+        self.garageDoor = garageDoor
+    }
+    
+    func execute() {
+        garageDoor.open()
+    }
+}
+
 
