@@ -108,6 +108,7 @@ class CheesePizza: Pizza {
     }
     
     func prepare() {
+        print("\n\n===== Order =====")
         print("준비 중: " + name)
         dough = ingredienFactory.createDough()
         sauce = ingredienFactory.createSauce()
@@ -131,6 +132,7 @@ class PepperoniPizza: Pizza {
     }
     
     func prepare() {
+        print("\n\n===== Order =====")
         print("준비 중: " + name)
         dough = ingredienFactory.createDough()
         sauce = ingredienFactory.createSauce()
@@ -154,6 +156,7 @@ class ClamPizza: Pizza {
     }
     
     func prepare() {
+        print("\n\n===== Order =====")
         print("준비 중: " + name)
         dough = ingredienFactory.createDough()
         sauce = ingredienFactory.createSauce()
@@ -178,6 +181,7 @@ class VeggiePizza: Pizza {
     
     func prepare() {
         print("준비 중: " + name)
+        print("\n\n===== Order =====")
         dough = ingredienFactory.createDough()
         sauce = ingredienFactory.createSauce()
         cheese = ingredienFactory.createCheese()

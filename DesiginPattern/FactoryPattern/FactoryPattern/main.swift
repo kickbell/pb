@@ -11,10 +11,22 @@ let nyStore = NYPizzaStore()
 let chicagoStore = ChicagoPizzaStore()
 
 var pizza = nyStore.orderPizza("veggie")
-print("에단이 주문한 \(pizza.getName())")
+print("< 에단이 주문한 \(pizza.getName()) >")
+print("dough:", pizza.dough)
+print("sauce:", pizza.sauce)
+print("cheese:", pizza.cheese)
+print("veggies:", pizza.veggies)
+print("pepperoni:", pizza.pepperoni)
+print("clam:", pizza.clam)
 
 pizza = chicagoStore.orderPizza("cheese")
-print("조엘이 주문한 \(pizza.getName())")
+print("< 조엘이 주문한 \(pizza.getName()) >")
+print("dough:", pizza.dough)
+print("sauce:", pizza.sauce)
+print("cheese:", pizza.cheese)
+print("veggies:", pizza.veggies)
+print("pepperoni:", pizza.pepperoni)
+print("clam:", pizza.clam)
 /*
  ===== Order =====
  준비 중: FactoryPattern.NYStyleVeggiePizza
