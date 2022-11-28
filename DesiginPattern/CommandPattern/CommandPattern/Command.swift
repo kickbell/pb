@@ -9,6 +9,7 @@ import Foundation
 
 protocol Command {
     func execute()
+    func undo()
 }
 
 extension Command {
@@ -22,6 +23,7 @@ extension Command {
 }
 
 class NoCommand: Command {
+    func undo() { }
     func execute() { }
 }
 
@@ -35,6 +37,10 @@ class LightOnCommand: Command {
     func execute() {
         light.on()
     }
+    
+    func undo() {
+        light.off()
+    }
 }
 
 class LightOffCommand: Command {
@@ -46,6 +52,10 @@ class LightOffCommand: Command {
     
     func execute() {
         light.off()
+    }
+    
+    func undo() {
+        light.on()
     }
 }
 
@@ -59,6 +69,10 @@ class GarageDoorOpenCommand: Command {
     func execute() {
         garageDoor.open()
     }
+    
+    func undo() {
+        garageDoor.close()
+    }
 }
 
 class GarageDoorCloseCommand: Command {
@@ -70,6 +84,10 @@ class GarageDoorCloseCommand: Command {
     
     func execute() {
         garageDoor.close()
+    }
+    
+    func undo() {
+        garageDoor.open()
     }
 }
 
@@ -85,6 +103,10 @@ class StereoOnWithCDCommand: Command {
         stereo.setCD()
         stereo.setVolume(11)
     }
+    
+    func undo() {
+        stereo.off()
+    }
 }
 
 class StereoOffCommand: Command {
@@ -96,6 +118,12 @@ class StereoOffCommand: Command {
     
     func execute() {
         stereo.off()
+    }
+    
+    func undo() {
+        stereo.on()
+        stereo.setCD()
+        stereo.setVolume(11)
     }
 }
 
@@ -109,6 +137,10 @@ class CeillingFanOnCommand: Command {
     func execute() {
         ceillingFan.on()
     }
+    
+    func undo() {
+        ceillingFan.off()
+    }
 }
 
 class CeillingFanOffCommand: Command {
@@ -121,5 +153,92 @@ class CeillingFanOffCommand: Command {
     func execute() {
         ceillingFan.off()
     }
+    
+    func undo() {
+        ceillingFan.on()
+    }
 }
 
+class CeillingFanHighCommand: Command {
+    let ceillingFan: CeilingFan
+    var prevSpeed: CeilingFan.Speed
+    
+    init(_ ceillingFan: CeilingFan) {
+        self.ceillingFan = ceillingFan
+        self.prevSpeed = ceillingFan.speed
+    }
+    
+    func execute() {
+        prevSpeed = ceillingFan.getSpeed(ceillingFan.speed)
+        ceillingFan.high()
+    }
+    
+    func undo() {
+        switch prevSpeed {
+        case .OFF:
+            ceillingFan.off()
+        case .LOW:
+            ceillingFan.low()
+        case .MEDIUM:
+            ceillingFan.medium()
+        case .HIGH:
+            ceillingFan.high()
+        }
+    }
+}
+
+class CeillingFanMediumCommand: Command {
+    let ceillingFan: CeilingFan
+    var prevSpeed: CeilingFan.Speed
+    
+    init(_ ceillingFan: CeilingFan) {
+        self.ceillingFan = ceillingFan
+        self.prevSpeed = ceillingFan.speed
+    }
+    
+    func execute() {
+        prevSpeed = ceillingFan.getSpeed(ceillingFan.speed)
+        ceillingFan.medium()
+    }
+    
+    func undo() {
+        switch prevSpeed {
+        case .OFF:
+            ceillingFan.off()
+        case .LOW:
+            ceillingFan.low()
+        case .MEDIUM:
+            ceillingFan.medium()
+        case .HIGH:
+            ceillingFan.high()
+        }
+    }
+}
+
+class CeillingFanLowCommand: Command {
+    let ceillingFan: CeilingFan
+    var prevSpeed: CeilingFan.Speed
+    
+    init(_ ceillingFan: CeilingFan) {
+        self.ceillingFan = ceillingFan
+        self.prevSpeed = ceillingFan.speed
+    }
+    
+    func execute() {
+        prevSpeed = ceillingFan.getSpeed(ceillingFan.speed)
+        ceillingFan.low()
+    }
+    
+    func undo() {
+        switch prevSpeed {
+        case .OFF:
+            ceillingFan.off()
+        case .LOW:
+            ceillingFan.low()
+        case .MEDIUM:
+            ceillingFan.medium()
+        case .HIGH:
+            ceillingFan.high()
+        }
+    }
+}

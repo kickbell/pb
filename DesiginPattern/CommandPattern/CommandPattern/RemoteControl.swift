@@ -10,6 +10,7 @@ import Foundation
 class RemoteControl {
     var onCommands: [Command] = []
     var offCommands: [Command] = []
+    var undoCommand: Command = NoCommand()
     
     init() {
         let noCommand = NoCommand()
@@ -28,10 +29,16 @@ class RemoteControl {
     
     func onButtonWasPushed(_ slot: Int) {
         onCommands[slot].execute()
+        undoCommand = onCommands[slot]
     }
     
     func offButtonWasPushed(_ slot: Int) {
         offCommands[slot].execute()
+        undoCommand = offCommands[slot]
+    }
+    
+    func undoButtonWasPushed() {
+        undoCommand.undo()
     }
     
     func toString() -> [String] {
@@ -41,6 +48,7 @@ class RemoteControl {
             let str = "[slot \(i)] \(onCommands[i].getName()) \(offCommands[i].getName())"
             stringBuffer.append(str)
         }
+        stringBuffer.append("[ undo ] \(undoCommand.getName())")
         stringBuffer.append("")
         return stringBuffer
     }

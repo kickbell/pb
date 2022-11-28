@@ -54,27 +54,43 @@ class Stereo {
 }
 
 class CeilingFan {
+    enum Speed: Int {
+        case OFF = 0
+        case LOW
+        case MEDIUM
+        case HIGH
+    }
+    
+    var location: String = ""
+    var speed = Speed.OFF
+    
     func high() {
-        print("거실 선풍기 속도가 HIGH로 설정되었습니다.")
+        speed = Speed.HIGH
+        print("거실 선풍기 속도가 \(speed)로 설정되었습니다.")
     }
     
     func medium() {
-        print("거실 선풍기 속도가 MEDIUM으로 설정되었습니다.")
+        speed = Speed.MEDIUM
+        print("거실 선풍기 속도가 \(speed)로 설정되었습니다.")
     }
     
     func low() {
-        print("거실 선풍기 속도가 LOW로 설정되었습니다.")
+        speed = Speed.LOW
+        print("거실 선풍기 속도가 \(speed)로 설정되었습니다.")
     }
 
     func on() {
-        print("거실 선풍기가 켜졌습니다.")
+        speed = Speed.MEDIUM
+        print("거실 선풍기 속도가 \(speed)로 설정되었습니다.")
     }
     
     func off() {
+        speed = Speed.OFF
         print("거실 선풍기가 꺼졌습니다.")
     }
     
-    func getSpeed(_ speed: String) {
+    func getSpeed(_ speed: CeilingFan.Speed) -> CeilingFan.Speed {
         print("거실 선풍기 속도는 \(speed)입니다.")
+        return speed
     }
 }
