@@ -242,3 +242,89 @@ class CeillingFanLowCommand: Command {
         }
     }
 }
+
+class MacroCommand: Command {
+    var commands: [Command]
+    
+    init(commands: [Command]) {
+        self.commands = commands
+    }
+    
+    func execute() {
+        commands.forEach {
+            $0.execute()
+        }
+    }
+    
+    func undo() {
+        commands.forEach {
+            $0.undo()
+        }
+    }    
+}
+
+class TVOnCommand: Command {
+    let tv: TV
+    
+    init(_ tv: TV) {
+        self.tv = tv
+    }
+    
+    func execute() {
+        tv.on()
+    }
+    
+    func undo() {
+        tv.off()
+    }
+}
+
+class TVOffCommand: Command {
+    let tv: TV
+    
+    init(_ tv: TV) {
+        self.tv = tv
+    }
+    
+    func execute() {
+        tv.off()
+    }
+    
+    func undo() {
+        tv.on()
+    }
+}
+
+class HottubOnCommand: Command {
+    let hottub: Hottub
+    
+    init(_ hottub: Hottub) {
+        self.hottub = hottub
+    }
+    
+    func execute() {
+        hottub.on()
+        hottub.setTemperature(40)
+    }
+    
+    func undo() {
+        hottub.off()
+    }
+}
+
+class HottubOffCommand: Command {
+    let hottub: Hottub
+    
+    init(_ hottub: Hottub) {
+        self.hottub = hottub
+    }
+    
+    func execute() {
+        hottub.off()
+    }
+    
+    func undo() {
+        hottub.on()
+    }
+}
+

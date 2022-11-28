@@ -94,3 +94,27 @@ class CeilingFan {
         return speed
     }
 }
+
+class Hottub {
+    func on() {
+       print("욕조가 켜졌습니다.")
+    }
+    
+    func off() {
+       print("욕조가 꺼졌습니다.")
+    }
+    
+    func setTemperature(_ temp: Int) {
+        print("욕조 온도를 \(temp)도로 설정합니다.")
+    }
+}
+
+class TV {
+    func on() {
+       print("거실 TV가 켜졌습니다.")
+    }
+    
+    func off() {
+       print("거실 TV가 꺼졌습니다.")
+    }
+}
