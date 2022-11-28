@@ -7,9 +7,34 @@
 
 import Foundation
 
-let remote = SimpleRemoteControl()
-let light = Light()
-let lightOnCommand = LightOnCommand(light)
+var remote = RemoteControl()
 
-remote.setCommand(lightOnCommand)
-remote.buttonWasPressed()
+let light = Light()
+let ceilingFan = CeilingFan()
+let garageDoor = GarageDoor()
+let stereo = Stereo()
+
+let lightOnCommand = LightOnCommand(light)
+let lightOffCommand = LightOffCommand(light)
+let ceillingFanOnCommand = CeillingFanOnCommand(ceilingFan)
+let ceillingFanOffCommand = CeillingFanOffCommand(ceilingFan)
+let garageDoorOpenCommand = GarageDoorOpenCommand(garageDoor)
+let garageDoorCloseCommand = GarageDoorCloseCommand(garageDoor)
+let stereoOnWithCDCommand = StereoOnWithCDCommand(stereo)
+let stereoOffCommand = StereoOffCommand(stereo)
+
+
+
+remote.setCommand(0, lightOnCommand, lightOffCommand)
+remote.setCommand(1, ceillingFanOnCommand, ceillingFanOffCommand)
+remote.setCommand(2, garageDoorOpenCommand, garageDoorCloseCommand)
+remote.setCommand(3, stereoOnWithCDCommand, stereoOffCommand)
+
+remote.toString().forEach { print($0) }
+
+remote.onButtonWasPushed(0)
+remote.onButtonWasPushed(1)
+remote.onButtonWasPushed(2)
+remote.onButtonWasPushed(3)
+
+

@@ -11,6 +11,7 @@
 		A8F60F6B293418D1002B00D1 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F6A293418D0002B00D1 /* Command.swift */; };
 		A8F60F6D2934194D002B00D1 /* SimpleRemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F6C2934194D002B00D1 /* SimpleRemoteControl.swift */; };
 		A8F60F6F29341A83002B00D1 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F6E29341A83002B00D1 /* Devices.swift */; };
+		A8F60F7129342910002B00D1 /* RemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F7029342910002B00D1 /* RemoteControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		A8F60F6A293418D0002B00D1 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		A8F60F6C2934194D002B00D1 /* SimpleRemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRemoteControl.swift; sourceTree = "<group>"; };
 		A8F60F6E29341A83002B00D1 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		A8F60F7029342910002B00D1 /* RemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A8F60F632933A0CB002B00D1 /* main.swift */,
 				A8F60F6A293418D0002B00D1 /* Command.swift */,
 				A8F60F6C2934194D002B00D1 /* SimpleRemoteControl.swift */,
+				A8F60F7029342910002B00D1 /* RemoteControl.swift */,
 				A8F60F6E29341A83002B00D1 /* Devices.swift */,
 			);
 			path = CommandPattern;
@@ -129,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60F7129342910002B00D1 /* RemoteControl.swift in Sources */,
 				A8F60F6D2934194D002B00D1 /* SimpleRemoteControl.swift in Sources */,
 				A8F60F642933A0CB002B00D1 /* main.swift in Sources */,
 				A8F60F6B293418D1002B00D1 /* Command.swift in Sources */,
