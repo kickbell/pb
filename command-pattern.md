@@ -5,7 +5,8 @@
 ## 1. 만능 IOT 리모컨 만들기 
 - IOT 리모컨의 API를 만들어야 합니다. 리모컨에는 7개의 슬롯과 ON/OFF 버튼, UNDO(뒤로) 버튼이 있네요. 
 - 문제는 제어해야하는 객체의 클래스가 너무 많다는 거죠. 또, 앞으로 이와 비슷한 클래스가 더 추가될 수도 있을 겁니다. 버튼은 ON/OFF 2개 뿐인데 말이죠. 어떻게 해야 할까요 ? 
-![](https://velog.velcdn.com/images/dev_kickbell/post/81df2a1b-4307-4723-b35e-298f4cd52368/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/0b66aee6-84e1-459f-9d2e-162cce19e7aa/image.png)
+				
+![](https://velog.velcdn.com/images/dev_kickbell/post/81df2a1b-4307-4723-b35e-298f4cd52368/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/0b66aee6-84e1-459f-9d2e-162cce19e7aa/image.png)			
 
 
 ## 2. 음식 주문 과정과 커맨드 패턴 
