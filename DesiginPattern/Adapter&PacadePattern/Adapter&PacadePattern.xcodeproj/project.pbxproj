@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A8F60F7F29351266002B00D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F7E29351266002B00D1 /* main.swift */; };
+		A8F60F8629367DDC002B00D1 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8529367DDC002B00D1 /* Duck.swift */; };
+		A8F60F8829367E24002B00D1 /* Turkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8729367E24002B00D1 /* Turkey.swift */; };
+		A8F60F8A29367E93002B00D1 /* TurkeyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8929367E93002B00D1 /* TurkeyAdapter.swift */; };
+		A8F60F8C293680F7002B00D1 /* DuckAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8B293680F7002B00D1 /* DuckAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		A8F60F7B29351266002B00D1 /* Adapter&PacadePattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Adapter&PacadePattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F60F7E29351266002B00D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A8F60F8529367DDC002B00D1 /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
+		A8F60F8729367E24002B00D1 /* Turkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turkey.swift; sourceTree = "<group>"; };
+		A8F60F8929367E93002B00D1 /* TurkeyAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkeyAdapter.swift; sourceTree = "<group>"; };
+		A8F60F8B293680F7002B00D1 /* DuckAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				A8F60F7E29351266002B00D1 /* main.swift */,
+				A8F60F8529367DDC002B00D1 /* Duck.swift */,
+				A8F60F8729367E24002B00D1 /* Turkey.swift */,
+				A8F60F8929367E93002B00D1 /* TurkeyAdapter.swift */,
+				A8F60F8B293680F7002B00D1 /* DuckAdapter.swift */,
 			);
 			path = "Adapter&PacadePattern";
 			sourceTree = "<group>";
@@ -120,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60F8629367DDC002B00D1 /* Duck.swift in Sources */,
+				A8F60F8829367E24002B00D1 /* Turkey.swift in Sources */,
+				A8F60F8C293680F7002B00D1 /* DuckAdapter.swift in Sources */,
 				A8F60F7F29351266002B00D1 /* main.swift in Sources */,
+				A8F60F8A29367E93002B00D1 /* TurkeyAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
