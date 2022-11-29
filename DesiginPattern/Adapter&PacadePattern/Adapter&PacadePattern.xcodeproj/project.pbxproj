@@ -12,6 +12,9 @@
 		A8F60F8829367E24002B00D1 /* Turkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8729367E24002B00D1 /* Turkey.swift */; };
 		A8F60F8A29367E93002B00D1 /* TurkeyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8929367E93002B00D1 /* TurkeyAdapter.swift */; };
 		A8F60F8C293680F7002B00D1 /* DuckAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8B293680F7002B00D1 /* DuckAdapter.swift */; };
+		A8F60F8E29369E18002B00D1 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8D29369E18002B00D1 /* Iterator.swift */; };
+		A8F60F902936A250002B00D1 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8F2936A250002B00D1 /* Enumeration.swift */; };
+		A8F60F922936A263002B00D1 /* EnumerationIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F912936A263002B00D1 /* EnumerationIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,9 @@
 		A8F60F8729367E24002B00D1 /* Turkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turkey.swift; sourceTree = "<group>"; };
 		A8F60F8929367E93002B00D1 /* TurkeyAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkeyAdapter.swift; sourceTree = "<group>"; };
 		A8F60F8B293680F7002B00D1 /* DuckAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckAdapter.swift; sourceTree = "<group>"; };
+		A8F60F8D29369E18002B00D1 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		A8F60F8F2936A250002B00D1 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
+		A8F60F912936A263002B00D1 /* EnumerationIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +72,31 @@
 			isa = PBXGroup;
 			children = (
 				A8F60F7E29351266002B00D1 /* main.swift */,
+				A8F60F932936A276002B00D1 /* Part1 */,
+				A8F60F942936A284002B00D1 /* Part2 */,
+			);
+			path = "Adapter&PacadePattern";
+			sourceTree = "<group>";
+		};
+		A8F60F932936A276002B00D1 /* Part1 */ = {
+			isa = PBXGroup;
+			children = (
 				A8F60F8529367DDC002B00D1 /* Duck.swift */,
 				A8F60F8729367E24002B00D1 /* Turkey.swift */,
 				A8F60F8929367E93002B00D1 /* TurkeyAdapter.swift */,
 				A8F60F8B293680F7002B00D1 /* DuckAdapter.swift */,
 			);
-			path = "Adapter&PacadePattern";
+			path = Part1;
+			sourceTree = "<group>";
+		};
+		A8F60F942936A284002B00D1 /* Part2 */ = {
+			isa = PBXGroup;
+			children = (
+				A8F60F8D29369E18002B00D1 /* Iterator.swift */,
+				A8F60F8F2936A250002B00D1 /* Enumeration.swift */,
+				A8F60F912936A263002B00D1 /* EnumerationIterator.swift */,
+			);
+			path = Part2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 				A8F60F8629367DDC002B00D1 /* Duck.swift in Sources */,
 				A8F60F8829367E24002B00D1 /* Turkey.swift in Sources */,
 				A8F60F8C293680F7002B00D1 /* DuckAdapter.swift in Sources */,
+				A8F60F8E29369E18002B00D1 /* Iterator.swift in Sources */,
 				A8F60F7F29351266002B00D1 /* main.swift in Sources */,
+				A8F60F922936A263002B00D1 /* EnumerationIterator.swift in Sources */,
 				A8F60F8A29367E93002B00D1 /* TurkeyAdapter.swift in Sources */,
+				A8F60F902936A250002B00D1 /* Enumeration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
