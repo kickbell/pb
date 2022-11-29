@@ -436,7 +436,8 @@ print("\(beverage3.getDescription()) $\(beverage3.cost())")
 - 또, 생성자로 구성으로 가지고 있는 beverage을 입력받아 기존에 래핑 되어있는 데이터에 접근이 가능해서 그 값에 추가해서 최종결과를 리턴해준다. 
 - 이런식이면, 예를들어 첨가물이 새롭게 추가된다고 했을 때 기존 코드는 건드리지 않고 데코레이터를 상속한 첨가물을 새로 만들면 된다. 그래서 실행 중에 마음대로 조합해서 사용할 수 있다. 
 - 즉, 목표대로 기존 코드는 건드리지 않고(변경에는 닫혀있고), 새로운 행동을 추가(확장에는 열려있다)할 수 있는 것이다.
-- 유의할 점은 아래의 코드에 나와 있는 것 처럼 한 번 DarkRoast를 Beverage로 감싸고 나면, 그게 DarkRoast인지 뭔지 알 수가 없다는 부분이다. 
+- 유의할 점은 아래의 코드에 나와 있는 것 처럼 한 번 DarkRoast를 Beverage로 감싸고 나면, 그게 DarkRoast인지 뭔지 알 수가 없다는 부분이다. 			
+			
 ![](https://velog.velcdn.com/images/dev_kickbell/post/04a366b3-651e-41ee-a1f3-c345dfe58cd4/image.png)
 
 
