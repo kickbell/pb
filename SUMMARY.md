@@ -12,7 +12,7 @@
 * [Factory Pattern](factory-pattern.md)       
 * [Singleton Pattern](singleton-pattern.md)       
 * [Command Pattern](command-pattern.md)       
-* [Adapter, Pacade Pattern](adapter-facade-pattern.md)       
+* [Adapter, Facade Pattern](adapter-facade-pattern.md)       
 * [Template Mathod Pattern](template-mathod-pattern.md)       
 * [Iterator, Composite Pattern](iterator-composite-pattern.md)       
 * [State Pattern](state-pattern.md)       
