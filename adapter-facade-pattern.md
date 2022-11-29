@@ -567,7 +567,6 @@ homeTheater.endMovie("탑 건: 매버릭")
 
 
 ## 8. 퍼사드 패턴과 최소 지식 원칙 
-- 아래 클라이언트의 친구는 퍼사드 하나 뿐이죠. 친구는 찐친구 하나만 있어도 됩니다. 
 			
 ![](https://velog.velcdn.com/images/dev_kickbell/post/94e50383-c8f7-4294-909d-3a82ffd2ac5e/image.png)
 
