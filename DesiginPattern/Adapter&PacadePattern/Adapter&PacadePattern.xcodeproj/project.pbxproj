@@ -16,6 +16,7 @@
 		A8F60F902936A250002B00D1 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F8F2936A250002B00D1 /* Enumeration.swift */; };
 		A8F60F922936A263002B00D1 /* EnumerationIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F912936A263002B00D1 /* EnumerationIterator.swift */; };
 		A8F60F962936C09A002B00D1 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F952936C09A002B00D1 /* Devices.swift */; };
+		A8F60F992936C4E4002B00D1 /* HomeTheaterFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60F982936C4E4002B00D1 /* HomeTheaterFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		A8F60F8F2936A250002B00D1 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
 		A8F60F912936A263002B00D1 /* EnumerationIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationIterator.swift; sourceTree = "<group>"; };
 		A8F60F952936C09A002B00D1 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		A8F60F982936C4E4002B00D1 /* HomeTheaterFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTheaterFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F60F952936C09A002B00D1 /* Devices.swift */,
+				A8F60F982936C4E4002B00D1 /* HomeTheaterFacade.swift */,
 			);
 			path = Part3;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60F992936C4E4002B00D1 /* HomeTheaterFacade.swift in Sources */,
 				A8F60F8629367DDC002B00D1 /* Duck.swift in Sources */,
 				A8F60F8829367E24002B00D1 /* Turkey.swift in Sources */,
 				A8F60F962936C09A002B00D1 /* Devices.swift in Sources */,
