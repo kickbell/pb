@@ -13,7 +13,7 @@
 * [Singleton Pattern](singleton-pattern.md)       
 * [Command Pattern](command-pattern.md)       
 * [Adapter, Facade Pattern](adapter-facade-pattern.md)       
-* [Template Mathod Pattern](template-mathod-pattern.md)       
+* [Template Method Pattern](template-method-pattern.md)       
 * [Iterator, Composite Pattern](iterator-composite-pattern.md)       
 * [State Pattern](state-pattern.md)       
 * [Proxy Pattern](proxy-pattern.md)      
