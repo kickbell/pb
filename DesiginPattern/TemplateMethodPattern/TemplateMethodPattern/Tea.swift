@@ -8,26 +8,11 @@
 import Foundation
 
 class Tea: CaffeineBeverage {
-    func prepareRecipe() {
-        boilWater()
-        steepTeaBag()
-        addLemon()
-        pourInCup()
-    }
-    
-    func boilWater() {
-        print("물 끓이는 중")
-    }
-    
-    func steepTeaBag() {
+    func brew() {
         print("찻잎을 우려내는 중")
     }
     
-    func addLemon() {
+    func addCondiments() {
         print("레몬을 추가하는 중")
-    }
-    
-    func pourInCup() {
-        print("컵에 따르는 중")
     }
 }

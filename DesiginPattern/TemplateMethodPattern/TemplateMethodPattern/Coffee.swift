@@ -8,26 +8,24 @@
 import Foundation
 
 class Coffee: CaffeineBeverage {
-    func prepareRecipe() {
-        boilWater()
-        brewCoffeeGrinds()
-        pourInCup()
-        addSugarAndMilk()
+    func brew() {
+        print("커피를 우려내는 중")
     }
     
-    func boilWater() {
-        print("물 끓이는 중")
+    func addCondiments() {
+        print("우유와 설탕을 추가하는 중")
     }
     
-    func brewCoffeeGrinds() {
-        print("필터로 커피를 우려내는 중")
+    func customerWantsCondiments() -> Bool {
+        let result = getUserInput()
+        if result == "y" {
+            return true
+        }
+        return false
     }
     
-    func pourInCup() {
-        print("컵에 따르는 중")
-    }
-    
-    func addSugarAndMilk() {
-        print("설탕과 우유를 추가하는 중")
+    func getUserInput() -> String {
+        print("커피에 우유와 설탕을 넣을까요? (y/n)")
+        return readLine() ?? ""
     }
 }
