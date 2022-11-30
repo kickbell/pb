@@ -68,3 +68,18 @@ ducks.sort()
 
 print("\n정렬 후:")
 ducks.forEach { print($0.toString()) }
+
+/*
+ 정렬 전:
+ A 체중: 8
+ E 체중: 2
+ C 체중: 7
+ D 체중: 5
+ B 체중: 10
+ 정렬 후:
+ E 체중: 2
+ D 체중: 5
+ C 체중: 7
+ A 체중: 8
+ B 체중: 10
+ */
