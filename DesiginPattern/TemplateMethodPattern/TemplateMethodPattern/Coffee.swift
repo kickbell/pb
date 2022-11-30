@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Coffee {
+class Coffee: CaffeineBeverage {
     func prepareRecipe() {
         boilWater()
         brewCoffeeGrinds()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Tea {
+class Tea: CaffeineBeverage {
     func prepareRecipe() {
         boilWater()
         steepTeaBag()

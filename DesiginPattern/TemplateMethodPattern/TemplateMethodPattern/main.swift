@@ -7,3 +7,11 @@
 
 import Foundation
 
+let coffee = Coffee()
+let tea = Tea()
+
+print("--- 커피 ----")
+coffee.prepareRecipe()
+print("\n")
+print("--- 홍차 ----")
+tea.prepareRecipe()

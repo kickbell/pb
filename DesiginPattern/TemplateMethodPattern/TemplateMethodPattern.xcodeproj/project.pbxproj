@@ -10,6 +10,7 @@
 		A8F60FA72936D4F2002B00D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FA62936D4F2002B00D1 /* main.swift */; };
 		A8F60FAE2937E07D002B00D1 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FAD2937E07D002B00D1 /* Coffee.swift */; };
 		A8F60FB02937E1AC002B00D1 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FAF2937E1AC002B00D1 /* Tea.swift */; };
+		A8F60FB22937E323002B00D1 /* CaffeineBeverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FB12937E323002B00D1 /* CaffeineBeverage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		A8F60FA62936D4F2002B00D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A8F60FAD2937E07D002B00D1 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		A8F60FAF2937E1AC002B00D1 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+		A8F60FB12937E323002B00D1 /* CaffeineBeverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineBeverage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A8F60FA62936D4F2002B00D1 /* main.swift */,
 				A8F60FAD2937E07D002B00D1 /* Coffee.swift */,
 				A8F60FAF2937E1AC002B00D1 /* Tea.swift */,
+				A8F60FB12937E323002B00D1 /* CaffeineBeverage.swift */,
 			);
 			path = TemplateMethodPattern;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				A8F60FB02937E1AC002B00D1 /* Tea.swift in Sources */,
 				A8F60FA72936D4F2002B00D1 /* main.swift in Sources */,
 				A8F60FAE2937E07D002B00D1 /* Coffee.swift in Sources */,
+				A8F60FB22937E323002B00D1 /* CaffeineBeverage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
