@@ -550,7 +550,7 @@ homeTheater.endMovie("탑 건: 매버릭")
 
 	
 
-## 7. 최소 지식 원칙(Principle of Least Knowledge)
+## 8. 최소 지식 원칙(Principle of Least Knowledge)
 - 디미터/데메테르 법칙(Law of Demeter)이나 축약해서 LoD 라고도 불린다. 
 - 한 마디로 정의하면 객체 사이의 상호작용은 될 수 있으면 아주 가까운 '친구'사이에만 허용하는 것이 좋다는 말이다.  
 - 즉, 시스템을 디자인 할 때, 어떤 객체든 그 객체와 상호작용을 하는 클래스의 개수와 상호작용 방식에 주의를 기울여야 한다는 뜻이다. 
@@ -566,7 +566,8 @@ homeTheater.endMovie("탑 건: 매버릭")
 ![](https://velog.velcdn.com/images/dev_kickbell/post/03071ce2-5a81-45af-9fdf-7d68cd0bdd93/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/a7a6b03a-ac5a-4268-863f-163f8afda404/image.png)![](https://velog.velcdn.com/images/dev_kickbell/post/73cb24b2-9323-4039-9bce-726a008d99d5/image.png)
 
 
-## 8. 퍼사드 패턴과 최소 지식 원칙 
+## 9. 퍼사드 패턴과 최소 지식 원칙 
+- 아래 클라이언트의 친구는 퍼사드 하나 뿐이죠. 친구는 찐친구 하나만 있어도 됩니다. 
 			
 ![](https://velog.velcdn.com/images/dev_kickbell/post/94e50383-c8f7-4294-909d-3a82ffd2ac5e/image.png)
 
