@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MenuItem {
+class MenuItem {
     let name: String
     let description: String
     let vegetarian: Bool
@@ -21,5 +21,21 @@ struct MenuItem {
         self.description = description
         self.vegetarian = vegetarian
         self.price = price
+    }
+    
+    func getName() -> String {
+        return name
+    }
+    
+    func getDescription() -> String {
+        return description
+    }
+    
+    func getVegetarian() -> Bool {
+        return vegetarian
+    }
+    
+    func getPrice() -> Double {
+        return price
     }
 }
