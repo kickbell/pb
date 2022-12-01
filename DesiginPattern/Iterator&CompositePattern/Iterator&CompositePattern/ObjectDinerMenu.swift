@@ -9,7 +9,7 @@ import Foundation
 
 
 class ObjectDinerMenu {
-    static let MAXITEMS = 4
+    static let MAXITEMS = 6
     
     var numberOfItems = 0
     var menuItems: [MenuItem]
@@ -39,6 +39,16 @@ class ObjectDinerMenu {
                 "샤워크라우트, 갖은 양념, 양파, 치즈가 곁들여진 핫도그",
                 false,
                 3.05)
+        
+        addItem("찐 채소와 브라운 라이스",
+                "찐 채소와 브라운 라이스의 절묘한 조화",
+                true,
+                3.99)
+        
+        addItem("파스타",
+                "마리나라 소스 스파게티, 효모빵도 드립니다.",
+                false,
+                3.89)
     }
     
     func addItem(_ name: String,
@@ -55,7 +65,11 @@ class ObjectDinerMenu {
         }
     }
     
-    func getMenuItems() -> [MenuItem] {
-        return menuItems
+//    func getMenuItems() -> [MenuItem] {
+//        return menuItems
+//    }
+    
+    func createIterator() -> Iterator {
+        return ObjectDinerIterator(menuItems)
     }
 }

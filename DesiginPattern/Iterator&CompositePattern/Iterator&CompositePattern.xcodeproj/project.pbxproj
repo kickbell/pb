@@ -11,6 +11,8 @@
 		A8F60FC929393B77002B00D1 /* PancakeHouseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */; };
 		A8F60FCB29393BBC002B00D1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FCA29393BBC002B00D1 /* MenuItem.swift */; };
 		A8F60FCD29393D6C002B00D1 /* ObjectDinerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FCC29393D6C002B00D1 /* ObjectDinerMenu.swift */; };
+		A8F60FCF29394C02002B00D1 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FCE29394C02002B00D1 /* Iterator.swift */; };
+		A8F60FD129394DEE002B00D1 /* Waitress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FD029394DEE002B00D1 /* Waitress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeHouseMenu.swift; sourceTree = "<group>"; };
 		A8F60FCA29393BBC002B00D1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		A8F60FCC29393D6C002B00D1 /* ObjectDinerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDinerMenu.swift; sourceTree = "<group>"; };
+		A8F60FCE29394C02002B00D1 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		A8F60FD029394DEE002B00D1 /* Waitress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waitress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				A8F60FC1293819BB002B00D1 /* main.swift */,
+				A8F60FD029394DEE002B00D1 /* Waitress.swift */,
+				A8F60FCE29394C02002B00D1 /* Iterator.swift */,
 				A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */,
 				A8F60FCC29393D6C002B00D1 /* ObjectDinerMenu.swift */,
 				A8F60FCA29393BBC002B00D1 /* MenuItem.swift */,
@@ -130,8 +136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F60FCB29393BBC002B00D1 /* MenuItem.swift in Sources */,
+				A8F60FD129394DEE002B00D1 /* Waitress.swift in Sources */,
 				A8F60FCD29393D6C002B00D1 /* ObjectDinerMenu.swift in Sources */,
 				A8F60FC2293819BB002B00D1 /* main.swift in Sources */,
+				A8F60FCF29394C02002B00D1 /* Iterator.swift in Sources */,
 				A8F60FC929393B77002B00D1 /* PancakeHouseMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

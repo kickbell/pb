@@ -40,7 +40,11 @@ class PancakeHouseMenu {
         menuItems.append(menuItem)
     }
     
-    func getMenuItems() -> [MenuItem] {
-        return menuItems
+//    func getMenuItems() -> [MenuItem] {
+//        return menuItems
+//    }
+    
+    func createIterator() -> Iterator {
+        return PancakeHouseIterator(menuItems)
     }
 }

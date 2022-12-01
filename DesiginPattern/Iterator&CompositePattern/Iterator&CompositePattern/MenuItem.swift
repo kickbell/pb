@@ -22,20 +22,4 @@ class MenuItem {
         self.vegetarian = vegetarian
         self.price = price
     }
-    
-    func getName() -> String {
-        return name
-    }
-    
-    func getDescription() -> String {
-        return description
-    }
-    
-    func getVegetarian() -> Bool {
-        return vegetarian
-    }
-    
-    func getPrice() -> Double {
-        return price
-    }
 }

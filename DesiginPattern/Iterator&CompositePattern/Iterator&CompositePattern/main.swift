@@ -7,11 +7,11 @@
 
 import Foundation
 
-let pancakeHouseMenu = PancakeHouseMenu()
-let breakfastItems = pancakeHouseMenu.getMenuItems()
-
-let objectDinerMenu = ObjectDinerMenu()
-let lunchItems = objectDinerMenu.getMenuItems()
+//let pancakeHouseMenu = PancakeHouseMenu()
+//let breakfastItems = pancakeHouseMenu.getMenuItems()
+//
+//let objectDinerMenu = ObjectDinerMenu()
+//let lunchItems = objectDinerMenu.getMenuItems()
 
 
 /*
@@ -25,19 +25,19 @@ let lunchItems = objectDinerMenu.getMenuItems()
  lunchItems.length
  lunchItems[i]
  */
-for i in 0..<breakfastItems.count {
-    let menuItem = breakfastItems[i]
-    print(menuItem.getName())
-    print(menuItem.getPrice())
-    print(menuItem.getDescription())
-}
-
-for i in 0..<lunchItems.count {
-    let menuItem = lunchItems[i]
-    print(menuItem.getName())
-    print(menuItem.getPrice())
-    print(menuItem.getDescription())
-}
+//for i in 0..<breakfastItems.count {
+//    let menuItem = breakfastItems[i]
+//    print(menuItem.getName())
+//    print(menuItem.getPrice())
+//    print(menuItem.getDescription())
+//}
+//
+//for i in 0..<lunchItems.count {
+//    let menuItem = lunchItems[i]
+//    print(menuItem.getName())
+//    print(menuItem.getPrice())
+//    print(menuItem.getDescription())
+//}
 
 /*
  K&B 팬케이크 세트
@@ -65,3 +65,10 @@ for i in 0..<lunchItems.count {
  3.05
  샤워크라우트, 갖은 양념, 양파, 치즈가 곁들여진 핫도그
  */
+
+
+let pancakeHouseMenu = PancakeHouseMenu()
+let objectDinerMenu = ObjectDinerMenu()
+
+let waitress = Waitress(pancakeHouseMenu, objectDinerMenu)
+waitress.printMenu()
