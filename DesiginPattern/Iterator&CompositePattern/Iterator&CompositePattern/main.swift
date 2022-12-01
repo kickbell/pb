@@ -7,5 +7,6 @@
 
 import Foundation
 
-
+let a: [MenuItem] = Array(repeating: MenuItem("", "", false, 0.0), count: 5)
+print(a)
 
