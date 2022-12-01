@@ -8,8 +8,8 @@
 import Foundation
 
 
-class DinerMenu {
-    static let MAXITEMS = 6
+class ObjectDinerMenu {
+    static let MAXITEMS = 4
     
     var numberOfItems = 0
     var menuItems: [MenuItem]
@@ -17,7 +17,7 @@ class DinerMenu {
     init() {
         menuItems = Array(
             repeating: MenuItem("", "", false, 0.0),
-            count: DinerMenu.MAXITEMS
+            count: ObjectDinerMenu.MAXITEMS
         )
         
         addItem("채식주의자용 BLT",
