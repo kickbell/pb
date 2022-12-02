@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A8F60FDF293A90A8002B00D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FDE293A90A8002B00D1 /* main.swift */; };
 		A8F60FE6293AA1AF002B00D1 /* GumballMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FE5293AA1AF002B00D1 /* GumballMachine.swift */; };
+		A8F60FE8293AAD05002B00D1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FE7293AAD05002B00D1 /* State.swift */; };
+		A8F60FEA293AAD7B002B00D1 /* NoQuarterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FE9293AAD7B002B00D1 /* NoQuarterState.swift */; };
+		A8F60FEC293AAD87002B00D1 /* HasQuarterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FEB293AAD87002B00D1 /* HasQuarterState.swift */; };
+		A8F60FEE293AAD8D002B00D1 /* SoldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FED293AAD8D002B00D1 /* SoldState.swift */; };
+		A8F60FF0293AAD95002B00D1 /* SoldOutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FEF293AAD95002B00D1 /* SoldOutState.swift */; };
+		A8F60FF2293AAD9D002B00D1 /* WinnerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FF1293AAD9D002B00D1 /* WinnerState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +33,12 @@
 		A8F60FDB293A90A8002B00D1 /* StatePattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StatePattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F60FDE293A90A8002B00D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A8F60FE5293AA1AF002B00D1 /* GumballMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GumballMachine.swift; sourceTree = "<group>"; };
+		A8F60FE7293AAD05002B00D1 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		A8F60FE9293AAD7B002B00D1 /* NoQuarterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoQuarterState.swift; sourceTree = "<group>"; };
+		A8F60FEB293AAD87002B00D1 /* HasQuarterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasQuarterState.swift; sourceTree = "<group>"; };
+		A8F60FED293AAD8D002B00D1 /* SoldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldState.swift; sourceTree = "<group>"; };
+		A8F60FEF293AAD95002B00D1 /* SoldOutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldOutState.swift; sourceTree = "<group>"; };
+		A8F60FF1293AAD9D002B00D1 /* WinnerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,12 @@
 			children = (
 				A8F60FDE293A90A8002B00D1 /* main.swift */,
 				A8F60FE5293AA1AF002B00D1 /* GumballMachine.swift */,
+				A8F60FE7293AAD05002B00D1 /* State.swift */,
+				A8F60FE9293AAD7B002B00D1 /* NoQuarterState.swift */,
+				A8F60FEB293AAD87002B00D1 /* HasQuarterState.swift */,
+				A8F60FED293AAD8D002B00D1 /* SoldState.swift */,
+				A8F60FEF293AAD95002B00D1 /* SoldOutState.swift */,
+				A8F60FF1293AAD9D002B00D1 /* WinnerState.swift */,
 			);
 			path = StatePattern;
 			sourceTree = "<group>";
@@ -123,8 +141,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F60FF2293AAD9D002B00D1 /* WinnerState.swift in Sources */,
 				A8F60FE6293AA1AF002B00D1 /* GumballMachine.swift in Sources */,
+				A8F60FEA293AAD7B002B00D1 /* NoQuarterState.swift in Sources */,
+				A8F60FEC293AAD87002B00D1 /* HasQuarterState.swift in Sources */,
+				A8F60FF0293AAD95002B00D1 /* SoldOutState.swift in Sources */,
+				A8F60FEE293AAD8D002B00D1 /* SoldState.swift in Sources */,
 				A8F60FDF293A90A8002B00D1 /* main.swift in Sources */,
+				A8F60FE8293AAD05002B00D1 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

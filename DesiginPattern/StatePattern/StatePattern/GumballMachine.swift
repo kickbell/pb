@@ -7,27 +7,29 @@
 
 import Foundation
 
-/*
- 우리나라가 1,10,50,100,500원 동전이 있듯,
- 미국도 그렇게 동전이 있고 이름도 따로 있다고 합니다.
- 여기서는 뽑기 한 번 돌리는데 25 cent가 드나보네요.
- 1달러가 1300원이니까,, 300원쯤 되는듯?
- 
- 1 cent = penny(푼돈)
- 5 cent = nickel(니켈)
- 10 cent = dime(다임)
- 25 cent = quarter(쿼터)
- 50 cent = half dollar(하프 달러)
- 100 cent = dollar(달러)
- */
-enum State: String {
-    case soldOut = "매진"
-    case noQuarter = "동전 투입 대기중"
-    case hasQuarter = "동전 투입 완료"
-    case sold = "알맹이 내보내는 중"
-}
+
 
 class GumballMachine {
+    /*
+     우리나라가 1,10,50,100,500원 동전이 있듯,
+     미국도 그렇게 동전이 있고 이름도 따로 있다고 합니다.
+     여기서는 뽑기 한 번 돌리는데 25 cent가 드나보네요.
+     1달러가 1300원이니까,, 300원쯤 되는듯?
+     
+     1 cent = penny(푼돈)
+     5 cent = nickel(니켈)
+     10 cent = dime(다임)
+     25 cent = quarter(쿼터)
+     50 cent = half dollar(하프 달러)
+     100 cent = dollar(달러)
+     */
+    enum State: String {
+        case soldOut = "매진"
+        case noQuarter = "동전 투입 대기중"
+        case hasQuarter = "동전 투입 완료"
+        case sold = "알맹이 내보내는 중"
+    }
+    
     var state: State = .soldOut
     var count = 0
     var description: String {
