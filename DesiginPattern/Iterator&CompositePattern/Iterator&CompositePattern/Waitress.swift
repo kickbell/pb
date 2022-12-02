@@ -36,20 +36,32 @@ class Waitress {
 //    }
     
     func printMenu() {
-        let objectDinerIterator = objectDinerMenu.createIterator()
-        let pancakeHouseIterator = pancakeHouseMenu.createIterator()
+        let objectDinerIterator = objectDinerMenu.makeIterator()
+        let pancakeHouseIterator = pancakeHouseMenu.makeIterator()
         
         print("------------------------ 메뉴판 ------------------------")
         print("\n< 아침 메뉴 >")
         printMenu(pancakeHouseIterator)
+//        while pancakeHouseIterator.hasNext() {
+//            guard let menuItem = pancakeHouseIterator.next() else { return }
+//            print("\(menuItem.name), \(menuItem.price) -- \(menuItem.description)")
+//        }
         print("\n< 점심 메뉴 >")
         printMenu(objectDinerIterator)
+//        while objectDinerIterator.hasNext() {
+//            guard let menuItem = objectDinerIterator.next() else { return }
+//            print("\(menuItem.name), \(menuItem.price) -- \(menuItem.description)")
+//        }
     }
     
-    private func printMenu(_ iterator: Iterator) {
-        while iterator.hasNext() {
-            let menuItem = iterator.next()
+    private func printMenu(_ iterator: AnyIterator<MenuItem>) {
+        iterator.forEach { _ in
+            guard let menuItem = iterator.next() else { return }
             print("\(menuItem.name), \(menuItem.price) -- \(menuItem.description)")
         }
+//        while iterator.hasNext() {
+//            let menuItem = iterator.next()
+//            print("\(menuItem.name), \(menuItem.price) -- \(menuItem.description)")
+//        }
     }
 }

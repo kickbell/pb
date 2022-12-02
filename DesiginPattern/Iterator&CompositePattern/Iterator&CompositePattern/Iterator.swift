@@ -7,12 +7,14 @@
 
 import Foundation
 
-protocol Iterator {
-    func hasNext() -> Bool
-    func next() -> MenuItem
-}
+//protocol Iterator {
+//    func hasNext() -> Bool
+//    func next() -> MenuItem
+//}
 
-class ObjectDinerIterator: Iterator {
+class ObjectDinerIterator: IteratorProtocol {
+    typealias Element = MenuItem
+    
     let items: [MenuItem]
     var position = 0 //반복 작업이 처리되고 있는 위치
     
@@ -34,14 +36,16 @@ class ObjectDinerIterator: Iterator {
         }
     }
     
-    func next() -> MenuItem {
+    func next() -> MenuItem? {
         let menuItem = items[position]
         position += 1
         return menuItem
     }
 }
 
-class PancakeHouseIterator: Iterator {
+class PancakeHouseIterator: IteratorProtocol {
+    typealias Element = MenuItem
+    
     let items: [MenuItem]
     var position = 0 //반복 작업이 처리되고 있는 위치
     
@@ -57,7 +61,7 @@ class PancakeHouseIterator: Iterator {
         }
     }
     
-    func next() -> MenuItem {
+    func next() -> MenuItem? {
         let menuItem = items[position]
         position += 1
         return menuItem

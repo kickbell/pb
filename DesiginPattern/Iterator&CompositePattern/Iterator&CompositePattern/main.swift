@@ -31,4 +31,4 @@ waitress.printMenu()
  파스타, 3.89 -- 마리나라 소스 스파게티, 효모빵도 드립니다.
  */
 
-
+//https://refactoring.guru/design-patterns/iterator/swift/example

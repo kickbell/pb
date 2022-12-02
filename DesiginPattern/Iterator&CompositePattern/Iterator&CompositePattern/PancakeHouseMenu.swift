@@ -7,6 +7,17 @@
 
 import Foundation
 
+extension PancakeHouseMenu: Sequence {
+    func makeIterator() -> AnyIterator<MenuItem>  {
+        var index = self.menuItems.count - 1
+
+        return AnyIterator {
+            defer { index -= 1 }
+            return index >= 0 ? self.menuItems[index] : nil
+        }
+    }
+}
+
 class PancakeHouseMenu {
     var menuItems: [MenuItem] = []
     
@@ -44,7 +55,7 @@ class PancakeHouseMenu {
 //        return menuItems
 //    }
     
-    func createIterator() -> Iterator {
-        return PancakeHouseIterator(menuItems)
-    }
+//    func createIterator() -> Iterator {
+//        return PancakeHouseIterator(menuItems)
+//    }
 }
