@@ -7,6 +7,7 @@
 
 import Foundation
 
+//종업원
 class Waitress {
     let pancakeHouseMenu: PancakeHouseMenu
     let objectDinerMenu: ObjectDinerMenu
@@ -16,6 +17,23 @@ class Waitress {
         self.pancakeHouseMenu = pancakeHouseMenu
         self.objectDinerMenu = objectDinerMenu
     }
+    
+//    func prentMenus() {
+//        let breakfastItems = pancakeHouseMenu.getMenuItems()
+//        let lunchItems = objectDinerMenu.getMenuItems()
+//
+//        print("------------------------ 메뉴판 ------------------------")
+//        print("\n< 아침 메뉴 >")
+//        for i in 0..<breakfastItems.count {
+//            let menuItem = breakfastItems[i]
+//            print("\(menuItem.name), \(menuItem.price) -- \(menuItem.description)")
+//        }
+//        print("\n< 점심 메뉴 >")
+//        for i in 0..<lunchItems.count {
+//            let menuItem = lunchItems[i]
+//            print("\(menuItem.name), \(menuItem.price) -- \(menuItem.description)")
+//        }
+//    }
     
     func printMenu() {
         let objectDinerIterator = objectDinerMenu.createIterator()
