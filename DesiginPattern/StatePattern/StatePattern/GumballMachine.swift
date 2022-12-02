@@ -30,6 +30,9 @@ enum State: String {
 class GumballMachine {
     var state: State = .soldOut
     var count = 0
+    var description: String {
+        return "\n주식회사 왕뽑기\n[ 최신형 뽑기 기계 ]\n남은 개수: \(count)개\n현재 상태: \(state.rawValue)\n"
+    }
     
     init(count: Int) {
         self.count = count
@@ -104,9 +107,5 @@ class GumballMachine {
         case .hasQuarter:
             print("알맹이를 내보낼 수 없습니다.")
         }
-    }
-    
-    var description: String {
-        return "\n주식회사 왕뽑기\n[ 최신형 뽑기 기계 ]\n남은 개수: \(count)개\n현재 상태: \(state.rawValue)\n"
     }
 }
