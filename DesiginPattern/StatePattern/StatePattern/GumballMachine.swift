@@ -20,11 +20,11 @@ import Foundation
  50 cent = half dollar(하프 달러)
  100 cent = dollar(달러)
  */
-enum State {
-    case soldOut
-    case noQuarter
-    case hasQuarter
-    case sold
+enum State: String {
+    case soldOut = "매진"
+    case noQuarter = "동전 투입 대기중"
+    case hasQuarter = "동전 투입 완료"
+    case sold = "알맹이 내보내는 중"
 }
 
 class GumballMachine {
@@ -104,5 +104,9 @@ class GumballMachine {
         case .hasQuarter:
             print("알맹이를 내보낼 수 없습니다.")
         }
+    }
+    
+    var description: String {
+        return "\n주식회사 왕뽑기\n[ 최신형 뽑기 기계 ]\n남은 개수: \(count)개\n현재 상태: \(state.rawValue)\n"
     }
 }
