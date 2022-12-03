@@ -8,6 +8,8 @@
 import Foundation
 
 class NoQuarterState: State {
+    var description: String = "동전 투입 대기중"
+    
     let gumballMachine: GumballMachine
     
     init(_ gumballMachine: GumballMachine) {

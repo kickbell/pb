@@ -8,6 +8,8 @@
 import Foundation
 
 protocol State {
+    var description: String { get }
+    
     func insertQuarter() //동전 넣기
     func ejectQuarter() //동전 반환하기
     func turnCrank() //크랭크(손잡이) 돌리기

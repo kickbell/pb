@@ -8,6 +8,9 @@
 import Foundation
 
 class HasQuarterState: State {
+    var description: String = "동전 투입 완료"
+    
+    let randomWinner = Int.random(in: 1...10) //10% 확률 난수 생성
     let gumballMachine: GumballMachine
     
     init(_ gumballMachine: GumballMachine) {
@@ -25,7 +28,12 @@ class HasQuarterState: State {
     
     func turnCrank() {
         print("손잡이를 돌리셨습니다.")
-        gumballMachine.setState(gumballMachine.soldState)
+        //보너스 발동 조건: 럭키 세븐 == 10% 난수
+        if randomWinner == 7 && gumballMachine.count > 1 {
+            gumballMachine.setState(gumballMachine.winnerState)
+        } else {
+            gumballMachine.setState(gumballMachine.soldState)
+        }
     }
     
     func dispense() {

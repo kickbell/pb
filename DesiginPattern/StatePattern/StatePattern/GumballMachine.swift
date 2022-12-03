@@ -23,24 +23,20 @@ import Foundation
  */
 
 class GumballMachine {
-    var state: State = SoldOutState()
     var count = 0
+    var description: String {
+        return "\n주식회사 왕뽑기\n[ 최신형 뽑기 기계 ]\n남은 개수: \(count)개\n현재 상태: \(state.description)\n"
+    }
+    lazy var state: State = count > 0 ? noQuarterState : soldOutState
     
-    let soldOutState: SoldOutState
-    let noQuarterState: NoQuarterState
-    let hasQuarterState: HasQuarterState
-    let soldState: SoldState
+    lazy var soldOutState = SoldOutState(self)
+    lazy var noQuarterState = NoQuarterState(self)
+    lazy var hasQuarterState = HasQuarterState(self)
+    lazy var soldState = SoldState(self)
+    lazy var winnerState = WinnerState(self)
     
     init(_ numberGumballs: Int) {
-        let gumballMachine = GumballMachine(numberGumballs)
-        
-        self.soldOutState = SoldOutState()
-        self.noQuarterState = NoQuarterState(gumballMachine)
-        self.hasQuarterState = HasQuarterState()
-        self.soldState = SoldState()
-        
         self.count = numberGumballs
-        state = numberGumballs > 0 ? noQuarterState : soldOutState
     }
     
     //동전 넣기
@@ -67,9 +63,4 @@ class GumballMachine {
         print("알맹이를 내보내고 있습니다.")
         if count > 0 { count -= 1 }
     }
-    
-//    //제품 내보내기
-//    func dispense() {
-//        state.dispense()
-//    }
 }

@@ -9,6 +9,23 @@ import Foundation
 
 let gumballMachine = GumballMachine(5)
 
+print(gumballMachine.description)
+
+gumballMachine.insertQuarter()
+gumballMachine.turnCrank()
+
+print(gumballMachine.description)
+
+gumballMachine.insertQuarter()
+gumballMachine.turnCrank()
+gumballMachine.insertQuarter()
+gumballMachine.turnCrank()
+
+print(gumballMachine.description)
+
+
+
+
 //print(gumballMachine)
 //print(gumballMachine.description)
 //

@@ -8,6 +8,8 @@
 import Foundation
 
 class SoldOutState: State {
+    var description: String = "매진"
+    
     let gumballMachine: GumballMachine
     
     init(_ gumballMachine: GumballMachine) {
