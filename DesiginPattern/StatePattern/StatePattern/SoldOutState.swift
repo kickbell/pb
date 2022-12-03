@@ -31,4 +31,8 @@ class SoldOutState: State {
     func dispense() {
         print("알맹이를 내보낼 수 없습니다.")
     }
+    
+    func refill() {
+        gumballMachine.setState(gumballMachine.noQuarterState)
+    }
 }

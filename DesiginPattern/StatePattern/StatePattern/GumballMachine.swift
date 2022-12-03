@@ -63,4 +63,11 @@ class GumballMachine {
         print("알맹이를 내보내고 있습니다.")
         if count > 0 { count -= 1 }
     }
+    
+    func refill(_ count: Int) {
+        self.count += count
+        print("\(self.count)개의 알맹이가 리필되었습니다.")
+        state.refill()
+    }
+    
 }

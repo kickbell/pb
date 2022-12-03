@@ -23,6 +23,11 @@ gumballMachine.turnCrank()
 
 print(gumballMachine.description)
 
+gumballMachine.refill(5)
+
+print(gumballMachine.description)
+
+
 
 
 

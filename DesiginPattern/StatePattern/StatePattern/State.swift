@@ -14,4 +14,9 @@ protocol State {
     func ejectQuarter() //동전 반환하기
     func turnCrank() //크랭크(손잡이) 돌리기
     func dispense() //알맹이 내보내기
+    func refill() //알맹이 리필하기
+}
+
+extension State {
+    func refill() { }
 }
