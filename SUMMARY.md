@@ -4,7 +4,7 @@
 * [네트워크](network.md)
 * [기술면접 가이드(손코딩)](interview.md)
 * [코딩테스트 풀이](coding-test.md)              
-* [디자인 패턴 원칙](design-pattern-rule.md)       
+* [디자인 패턴 원칙, 요약, 분류](design-pattern-rule.md)       
 * [IS-A 와 HAS-A](is-a-has-a.md)       
 * [Strategy Pattern](strategy-pattern.md)       
 * [Observer Pattern](observer-pattern.md)       
