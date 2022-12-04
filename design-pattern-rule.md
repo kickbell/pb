@@ -9,13 +9,6 @@
 > 8. 먼저 연락하지 마세요. 저희가 연락 드리겠습니다.(Hollywood Principle)
 > 9. 어떤 클래스가 바뀌는 이유는 하나 뿐이어야만 한다. 
 
-## 디자인 패턴 분류하기
-### 1. 생성,행동, 구조라는 3가지 범주로 분류
-![](https://velog.velcdn.com/images/dev_kickbell/post/dccbfdc6-be83-4fac-9afc-2faf984b11b7/image.png)
-### 2. 클래스 또는 객체를 다루는 지에 따른 분류
-![](https://velog.velcdn.com/images/dev_kickbell/post/2aeda93e-3647-4300-88f1-1506319f3035/image.png)
-
-
 ## 디자인 패턴 한 줄 요약 
 
 |패턴|설명|
@@ -43,3 +36,11 @@
 | Memento Pattern ( 메멘토 패턴 )|객체를 이전의 상태로 복구합니다.|
 | Prototype Pattern ( 프로토타입 패턴 )|어떤 클래스의 인스턴스를 만들 때 자원과 시간이 많이 들거나 복잡할 때 사용합니다. 기존 인스턴스를 복사하기만 해도 새로운 인스턴스를 만들 수 있습니다.|
 | Visitor Pattern ( 비지터 패턴 )|다양한 객체에 새로운 기능을 추가해야 하는데 캡슐화가 별로 중요하지 않다면 사용합니다.|
+
+
+## 디자인 패턴 분류하기
+- 생성,행동, 구조라는 3가지 범주로 분류
+![](https://velog.velcdn.com/images/dev_kickbell/post/dccbfdc6-be83-4fac-9afc-2faf984b11b7/image.png)
+- 클래스 또는 객체를 다루는 지에 따른 분류
+![](https://velog.velcdn.com/images/dev_kickbell/post/2aeda93e-3647-4300-88f1-1506319f3035/image.png)
+
