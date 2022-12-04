@@ -16,5 +16,11 @@
 * [Template Method Pattern](template-method-pattern.md)       
 * [Iterator, Composite Pattern](iterator-composite-pattern.md)       
 * [State Pattern](state-pattern.md)       
-* [Proxy Pattern](proxy-pattern.md)      
+* [Proxy Pattern](proxy-pattern.md)                   
+* [기타 패턴](etc-pattern.md)           
+
+
+
+
+
 
