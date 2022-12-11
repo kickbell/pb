@@ -8,13 +8,13 @@
 import Foundation
 
 class DuckSimulator {
-    func simulate() {
-        let mallardDuck: Quackable = MallardDuck()
-        let redheadDuck: Quackable = RedheadDuck()
-        let duckCall: Quackable = DuckCall()
-        let rubberDuck: Quackable = RubberDuck()
+    func simulate(_ duckFactory: AbstractDuckFactory) {
+        let mallardDuck: Quackable = duckFactory.createMallardDuck()
+        let redheadDuck: Quackable = duckFactory.createRedheadDuck()
+        let duckCall: Quackable = duckFactory.createDuckCall()
+        let rubberDuck: Quackable = duckFactory.createRubberDuck()
         let gooseDuck: Quackable = GooseAdapter(Goose())
-        
+
         print("오리 시뮬레이션 게임")
         
         simulate(mallardDuck)
@@ -22,6 +22,8 @@ class DuckSimulator {
         simulate(duckCall)
         simulate(rubberDuck)
         simulate(gooseDuck)
+        
+        print("오리가 소리를 낸 횟수: \(QuackCounter.getQuacks()) 회")
     }
     
     func simulate(_ duck: Quackable) {
