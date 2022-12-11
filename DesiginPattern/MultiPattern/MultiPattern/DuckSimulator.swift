@@ -13,7 +13,7 @@ class DuckSimulator {
         let redheadDuck: Quackable = duckFactory.createRedheadDuck()
         let duckCall: Quackable = duckFactory.createDuckCall()
         let rubberDuck: Quackable = duckFactory.createRubberDuck()
-        let gooseDuck: Quackable = GooseAdapter(Goose())
+        let gooseDuck: Quackable = duckFactory.createGooseDuck()
 
         print("오리 시뮬레이션 게임")
         

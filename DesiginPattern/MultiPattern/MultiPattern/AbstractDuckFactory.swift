@@ -12,6 +12,7 @@ protocol AbstractDuckFactory {
     func createRedheadDuck() -> Quackable
     func createDuckCall() -> Quackable
     func createRubberDuck() -> Quackable
+    func createGooseDuck() -> Quackable
 }
 
 //class DuckFactory: AbstractDuckFactory {
@@ -47,5 +48,9 @@ class CountingDuckFactory: AbstractDuckFactory {
     
     func createRubberDuck() -> Quackable {
         return QuackCounter(RubberDuck())
+    }
+    
+    func createGooseDuck() -> Quackable {
+        return GooseAdapter(Goose())
     }
 }
