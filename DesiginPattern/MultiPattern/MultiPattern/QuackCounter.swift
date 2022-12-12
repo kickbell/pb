@@ -8,7 +8,6 @@
 import Foundation
 
 class QuackCounter: Quackable {
-    
     static var numberOfQuacks: Int = 0
     let duck: Quackable
     
@@ -25,4 +24,11 @@ class QuackCounter: Quackable {
         return Self.numberOfQuacks
     }
     
+    func registerObserver(ob: QuackObserver) {
+        duck.registerObserver(ob: ob)
+    }
+    
+    func notifyObservers() {
+        duck.notifyObservers()
+    }
 }

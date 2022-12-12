@@ -14,6 +14,8 @@ class Goose {
 }
 
 class GooseAdapter: Quackable {
+    lazy var observable: QuackProtocol = QuackObservable(self)
+
     let goose: Goose
     
     init(_ goose: Goose) {
@@ -22,5 +24,14 @@ class GooseAdapter: Quackable {
     
     func quack() {
         goose.honk()
+        notifyObservers()
+    }
+    
+    func registerObserver(ob: QuackObserver) {
+        observable.registerObserver(ob: ob)
+    }
+    
+    func notifyObservers() {
+        observable.notifyObservers()
     }
 }

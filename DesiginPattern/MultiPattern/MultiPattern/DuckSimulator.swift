@@ -26,11 +26,16 @@ class DuckSimulator {
         let flockOfMallards = createMallards(duckFactory)
         flockOfDucks.add(flockOfMallards)
         
+        let quacklogist = Quacklogist()
+        flockOfDucks.registerObserver(ob: quacklogist)
+        
         print("\n오리 게임: 전체 오리 무리")
         simulate(flockOfDucks)
         
         print("\n오리 게임: Mallard 오리 무리")
         simulate(flockOfMallards)
+        
+        
         
         print("\n오리가 소리를 낸 횟수: \(QuackCounter.getQuacks()) 회")
     }

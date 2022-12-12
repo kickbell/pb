@@ -14,6 +14,7 @@
 		A8F14C2629466CB600EE7F22 /* QuackCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C2529466CB600EE7F22 /* QuackCounter.swift */; };
 		A8F14C2829466E4000EE7F22 /* AbstractDuckFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C2729466E4000EE7F22 /* AbstractDuckFactory.swift */; };
 		A8F14C2A2946737500EE7F22 /* Flock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C292946737500EE7F22 /* Flock.swift */; };
+		A8F14C2C294695A000EE7F22 /* QuackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C2B294695A000EE7F22 /* QuackProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		A8F14C2529466CB600EE7F22 /* QuackCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackCounter.swift; sourceTree = "<group>"; };
 		A8F14C2729466E4000EE7F22 /* AbstractDuckFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractDuckFactory.swift; sourceTree = "<group>"; };
 		A8F14C292946737500EE7F22 /* Flock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flock.swift; sourceTree = "<group>"; };
+		A8F14C2B294695A000EE7F22 /* QuackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				A8F14C292946737500EE7F22 /* Flock.swift */,
 				A8F14C18294667C600EE7F22 /* main.swift */,
+				A8F14C2B294695A000EE7F22 /* QuackProtocol.swift */,
 				A8F14C2729466E4000EE7F22 /* AbstractDuckFactory.swift */,
 				A8F14C232946699100EE7F22 /* GooseAdapter.swift */,
 				A8F14C21294668A600EE7F22 /* DuckSimulator.swift */,
@@ -140,6 +143,7 @@
 			files = (
 				A8F14C22294668A600EE7F22 /* DuckSimulator.swift in Sources */,
 				A8F14C2629466CB600EE7F22 /* QuackCounter.swift in Sources */,
+				A8F14C2C294695A000EE7F22 /* QuackProtocol.swift in Sources */,
 				A8F14C19294667C600EE7F22 /* main.swift in Sources */,
 				A8F14C202946681F00EE7F22 /* Quackable.swift in Sources */,
 				A8F14C242946699100EE7F22 /* GooseAdapter.swift in Sources */,
