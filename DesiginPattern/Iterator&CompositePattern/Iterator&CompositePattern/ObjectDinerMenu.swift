@@ -7,17 +7,6 @@
 
 import Foundation
 
-extension ObjectDinerMenu: Sequence {
-    func makeIterator() -> AnyIterator<MenuItem>  {
-        var index = self.menuItems.count - 1
-
-        return AnyIterator {
-            defer { index -= 1 }
-            return index >= 0 ? self.menuItems[index] : nil
-        }
-    }
-}
-
 class ObjectDinerMenu {
     static let MAXITEMS = 6
     
@@ -75,11 +64,7 @@ class ObjectDinerMenu {
         }
     }
     
-//    func getMenuItems() -> [MenuItem] {
-//        return menuItems
-//    }
-    
-//    func createIterator() -> Iterator {
-//        return ObjectDinerIterator(menuItems)
-//    }
+    func createIterator() -> Iterator {
+        return ObjectDinerMenuIterator(menuItems)
+    }
 }

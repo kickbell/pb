@@ -10,8 +10,9 @@ import Foundation
 
 let pancakeHouseMenu = PancakeHouseMenu()
 let objectDinerMenu = ObjectDinerMenu()
+let cafeMenu = CafeMenu()
 
-let waitress = Waitress(pancakeHouseMenu, objectDinerMenu)
+let waitress = Waitress(pancakeHouseMenu, objectDinerMenu, cafeMenu)
 waitress.printMenu()
 /*
  ------------------------ 메뉴판 ------------------------
@@ -29,6 +30,5 @@ waitress.printMenu()
  핫도그, 3.05 -- 샤워크라우트, 갖은 양념, 양파, 치즈가 곁들여진 핫도그
  찐 채소와 브라운 라이스, 3.99 -- 찐 채소와 브라운 라이스의 절묘한 조화
  파스타, 3.89 -- 마리나라 소스 스파게티, 효모빵도 드립니다.
+ Program ended with exit code: 0
  */
-
-//https://refactoring.guru/design-patterns/iterator/swift/example
