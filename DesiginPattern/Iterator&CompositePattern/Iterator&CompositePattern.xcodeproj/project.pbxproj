@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A8F14C7429483F1A00EE7F22 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C7329483F1A00EE7F22 /* Iterator.swift */; };
 		A8F14C7629484DCF00EE7F22 /* CafeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C7529484DCF00EE7F22 /* CafeMenu.swift */; };
+		A8F14C782948692300EE7F22 /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F14C772948692300EE7F22 /* MenuComponent.swift */; };
 		A8F60FC2293819BB002B00D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FC1293819BB002B00D1 /* main.swift */; };
 		A8F60FC929393B77002B00D1 /* PancakeHouseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */; };
 		A8F60FCB29393BBC002B00D1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F60FCA29393BBC002B00D1 /* MenuItem.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		A8F14C7329483F1A00EE7F22 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		A8F14C7529484DCF00EE7F22 /* CafeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMenu.swift; sourceTree = "<group>"; };
+		A8F14C772948692300EE7F22 /* MenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComponent.swift; sourceTree = "<group>"; };
 		A8F60FBE293819BB002B00D1 /* Iterator&CompositePattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Iterator&CompositePattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F60FC1293819BB002B00D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeHouseMenu.swift; sourceTree = "<group>"; };
@@ -50,6 +52,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8F14C792948693500EE7F22 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */,
+				A8F60FCC29393D6C002B00D1 /* ObjectDinerMenu.swift */,
+				A8F14C7529484DCF00EE7F22 /* CafeMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A8F14C7A2948694200EE7F22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8F60FCA29393BBC002B00D1 /* MenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8F14C7B2948694900EE7F22 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				A8F14C7329483F1A00EE7F22 /* Iterator.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		A8F14C7C2948696900EE7F22 /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				A8F60FD029394DEE002B00D1 /* Waitress.swift */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
 		A8F60FB5293819BB002B00D1 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				A8F60FC1293819BB002B00D1 /* main.swift */,
-				A8F60FD029394DEE002B00D1 /* Waitress.swift */,
-				A8F60FC829393B77002B00D1 /* PancakeHouseMenu.swift */,
-				A8F60FCC29393D6C002B00D1 /* ObjectDinerMenu.swift */,
-				A8F14C7529484DCF00EE7F22 /* CafeMenu.swift */,
-				A8F14C7329483F1A00EE7F22 /* Iterator.swift */,
-				A8F60FCA29393BBC002B00D1 /* MenuItem.swift */,
+				A8F14C772948692300EE7F22 /* MenuComponent.swift */,
+				A8F14C7C2948696900EE7F22 /* Simulator */,
+				A8F14C792948693500EE7F22 /* Menu */,
+				A8F14C7B2948694900EE7F22 /* Iterator */,
+				A8F14C7A2948694200EE7F22 /* Model */,
 			);
 			path = "Iterator&CompositePattern";
 			sourceTree = "<group>";
@@ -144,6 +179,7 @@
 				A8F60FCD29393D6C002B00D1 /* ObjectDinerMenu.swift in Sources */,
 				A8F14C7429483F1A00EE7F22 /* Iterator.swift in Sources */,
 				A8F60FC2293819BB002B00D1 /* main.swift in Sources */,
+				A8F14C782948692300EE7F22 /* MenuComponent.swift in Sources */,
 				A8F60FC929393B77002B00D1 /* PancakeHouseMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
