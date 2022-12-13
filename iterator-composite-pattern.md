@@ -194,8 +194,7 @@ waitress.printMenu()
 ## 2. 반복자 패턴(Iterator Pattern) 적용하기
 - 그래서 Iterator(반복자)를 왜 적용하려고 하는건데 ? 
 - 똑같이 for문을 돌고 싶은데, 누구는 size와 get(i)으로 가져오고 누구는 length와 array[i]로 가져온다. 즉, 컬렉션이 다름에 따라서 지원되는 API가 다르다는 것이다.
-- 
-그래서, Iterator 인터페이스를 하나 만들고 그것에 맞는 클래스를 생성해서 똑같은 createIterator(), hasNext(), next() 라는 규격으로 맞춰서 하나로 관리할 수 있도록 하겠다는 것이다. 
+- 그래서, Iterator 인터페이스를 하나 만들고 그것에 맞는 클래스를 생성해서 똑같은 createIterator(), hasNext(), next() 라는 규격으로 맞춰서 하나로 관리할 수 있도록 하겠다는 것이다. 
 - 여기 코드에서는 hasNext()는 next()에 옵셔널을 적용해서 따로 구현하지 않았다. 
 - Iterator 적용 전의 그림 
     - ![](https://velog.velcdn.com/images/dev_kickbell/post/43ffe08e-6204-40a7-afb9-1203ff7b50f0/image.png)
