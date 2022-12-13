@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MenuItem {
+class MenuItem: MenuComponent {
     let name: String
     let description: String
     let vegetarian: Bool
@@ -21,5 +21,10 @@ class MenuItem {
         self.description = description
         self.vegetarian = vegetarian
         self.price = price
+    }
+    
+    func print() {
+        Swift.print("  \(name) \(vegetarian ? "(v)": ""),  \(price)")
+        Swift.print("    -- \(description)")
     }
 }
