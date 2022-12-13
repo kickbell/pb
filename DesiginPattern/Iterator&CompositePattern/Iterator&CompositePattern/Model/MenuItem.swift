@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MenuItem: MenuComponent {
+class MenuItem: MenuComponent {    
     let name: String
     let description: String
     let vegetarian: Bool
