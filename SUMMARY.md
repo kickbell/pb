@@ -1,27 +1,23 @@
 # Table of contents
 
-* [컴퓨터구조, 운영체제](computer_science.md)
+* [README](README.md)
+* [컴퓨터구조, 운영체제](computer\_science.md)
 * [네트워크](network.md)
 * [기술면접 가이드(손코딩)](interview.md)
-* [코딩테스트 풀이](coding-test.md)              
-* [디자인 패턴 원칙, 요약, 분류](design-pattern-rule.md)       
-* [IS-A 와 HAS-A](is-a-has-a.md)       
-* [Strategy Pattern](strategy-pattern.md)       
-* [Observer Pattern](observer-pattern.md)       
-* [Decorator Pattern](decorator-pattern.md)       
-* [Factory Pattern](factory-pattern.md)       
-* [Singleton Pattern](singleton-pattern.md)       
-* [Command Pattern](command-pattern.md)       
-* [Adapter, Facade Pattern](adapter-facade-pattern.md)       
-* [Template Method Pattern](template-method-pattern.md)       
-* [Iterator, Composite Pattern](iterator-composite-pattern.md)       
-* [State Pattern](state-pattern.md)       
+* [코딩테스트 풀이](coding-test.md)
+* [디자인 패턴 원칙, 요약, 분류](design-pattern-rule.md)
+* [IS-A 와 HAS-A](is-a-has-a.md)
+* [Strategy Pattern](strategy-pattern.md)
+* [Observer Pattern](observer-pattern.md)
+* [Decorator Pattern](decorator-pattern.md)
+* [Factory Pattern](factory-pattern.md)
+* [Singleton Pattern](singleton-pattern.md)
+* [Command Pattern](command-pattern.md)
+* [Adapter, Facade Pattern](adapter-facade-pattern.md)
+* [Template Method Pattern](template-method-pattern.md)
+* [Iterator, Composite Pattern](iterator-composite-pattern.md)
+* [State Pattern](state-pattern.md)
 * [Proxy Pattern](proxy-pattern.md)
-* [Multi Pattern](multi-pattern.md)                   
-* [기타 패턴](etc-pattern.md)           
-
-
-
-
-
-
+* [Multi Pattern](multi-pattern.md)
+* [기타 패턴](etc-pattern.md)
+* [NewPage](newpage.md)
